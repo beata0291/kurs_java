@@ -18,16 +18,16 @@ public class CreationAddress {
         wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wd.get("http://localhost:8080/addressbook/");
-        login();
+        login("admin", "secret");
     }
 
-    private void login() {
+    private void login(String name, String password) {
         wd.findElement(By.name("user")).click();
         wd.findElement(By.name("user")).clear();
-        wd.findElement(By.name("user")).sendKeys("admin");
+        wd.findElement(By.name("user")).sendKeys(name);
         wd.findElement(By.name("pass")).click();
         wd.findElement(By.name("pass")).clear();
-        wd.findElement(By.name("pass")).sendKeys("secret");
+        wd.findElement(By.name("pass")).sendKeys(password);
         wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
     }
 
@@ -36,7 +36,7 @@ public class CreationAddress {
 
         goToNewAddressPage();
         initAddressCreation();
-        fillAddressForm();
+        fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455"));
         submitAddress();
         returnAllAddress();
     }
@@ -49,20 +49,20 @@ public class CreationAddress {
         wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
     }
 
-    private void fillAddressForm() {
-        wd.findElement(By.name("firstname")).sendKeys("Jan");
+    private void fillAddressForm(GroupAdressData groupAdressData) {
+        wd.findElement(By.name("firstname")).sendKeys(groupAdressData.getFirstName());
         wd.findElement(By.name("lastname")).click();
         wd.findElement(By.name("lastname")).clear();
-        wd.findElement(By.name("lastname")).sendKeys("Kowalski");
+        wd.findElement(By.name("lastname")).sendKeys(groupAdressData.getLastName());
         wd.findElement(By.name("address")).click();
         wd.findElement(By.name("address")).clear();
-        wd.findElement(By.name("address")).sendKeys("Warszawa");
+        wd.findElement(By.name("address")).sendKeys(groupAdressData.getAddress());
         wd.findElement(By.name("email")).click();
         wd.findElement(By.name("email")).clear();
-        wd.findElement(By.name("email")).sendKeys("jan@wp.pl");
+        wd.findElement(By.name("email")).sendKeys(groupAdressData.getEmail());
         wd.findElement(By.name("mobile")).click();
         wd.findElement(By.name("mobile")).clear();
-        wd.findElement(By.name("mobile")).sendKeys("785456225455");
+        wd.findElement(By.name("mobile")).sendKeys(groupAdressData.getPhones());
     }
 
     private void initAddressCreation() {
