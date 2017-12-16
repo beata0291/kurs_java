@@ -1,3 +1,6 @@
+package ru.stqa.pft.addressbook;
+
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -17,12 +20,8 @@ public class CreationGroupTest {
     
     @BeforeMethod
     public void setUp() throws Exception {
-        wd = new FirefoxDriver();
+        wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-    }
-    
-    @Test
-    public void CreationGroupTest() {
         wd.get("http://localhost:8080/addressbook/");
         wd.findElement(By.name("user")).click();
         wd.findElement(By.name("user")).clear();
@@ -31,6 +30,11 @@ public class CreationGroupTest {
         wd.findElement(By.name("pass")).clear();
         wd.findElement(By.name("pass")).sendKeys("secret");
         wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
+    }
+    
+    @Test
+    public void testCreationGroup() {
+
         wd.findElement(By.linkText("groups")).click();
         wd.findElement(By.name("new")).click();
         wd.findElement(By.name("group_name")).click();
@@ -44,7 +48,6 @@ public class CreationGroupTest {
         wd.findElement(By.name("group_footer")).sendKeys("Kraków");
         wd.findElement(By.name("submit")).click();
         wd.findElement(By.linkText("group page")).click();
-        wd.findElement(By.linkText("Logout")).click();
     }
     
     @AfterMethod
