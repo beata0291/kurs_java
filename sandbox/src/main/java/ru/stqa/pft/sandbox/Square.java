@@ -7,5 +7,9 @@ public class Square {
         this.l= len;
     }
 
+    public double area (){
+        return this.l * this.l;
+    }
+
 
 }
