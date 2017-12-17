@@ -1,13 +1,13 @@
 package ru.stqa.pft.addressbook;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebDriver;
 
 public class groupHelper extends BaseHelper {
 
 
 
-    public groupHelper(FirefoxDriver wd) {
+    public groupHelper(WebDriver wd) {
         super(wd);
     }
 
