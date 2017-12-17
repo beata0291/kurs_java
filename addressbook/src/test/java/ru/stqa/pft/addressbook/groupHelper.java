@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class groupHelper extends BaseHelper {
 
 
+
     public groupHelper(FirefoxDriver wd) {
         super(wd);
     }
@@ -28,5 +29,17 @@ public class groupHelper extends BaseHelper {
         click(By.name("new"));
         click(By.name("group_name"));
         wd.findElement(By.name("group_name")).clear();
+    }
+
+    public void selectGroup() {
+        click(By.name("selected[]"));
+    }
+
+    public void clickEditGroup() {
+        click(By.name("edit"));
+    }
+
+    public void submitModificationGroup() {
+        click(By.name("update"));
     }
 }
