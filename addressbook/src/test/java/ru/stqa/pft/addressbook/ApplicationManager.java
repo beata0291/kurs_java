@@ -24,7 +24,6 @@ public class ApplicationManager {
 
 
     protected void init() {
-        wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
         if (browser.equals(org.openqa.selenium.remote.BrowserType.FIREFOX)){
             wd= new FirefoxDriver (new FirefoxOptions().setLegacy(true));
         } else if (browser.equals(org.openqa.selenium.remote.BrowserType.CHROME)){
