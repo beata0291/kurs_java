@@ -1,9 +1,9 @@
-package ru.stqa.pft.addressbook;
+package ru.stqa.pft.addressbook.helpers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ContactHelper extends BaseHelper{
+public class ContactHelper extends BaseHelper {
 
     public ContactHelper(WebDriver wd) {
         super(wd);

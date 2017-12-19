@@ -1,10 +1,12 @@
-package ru.stqa.pft.addressbook;
+package ru.stqa.pft.addressbook.tests.Address;
 
 import org.testng.annotations.Test;
 
 import org.openqa.selenium.*;
+import ru.stqa.pft.addressbook.models.GroupAdressData;
+import ru.stqa.pft.addressbook.tests.TestBase;
 
-public class CreationAddress extends TestBase{
+public class CreationAddress extends TestBase {
 
 
     @Test

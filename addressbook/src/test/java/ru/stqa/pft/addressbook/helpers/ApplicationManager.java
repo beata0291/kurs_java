@@ -1,21 +1,20 @@
-package ru.stqa.pft.addressbook;
+package ru.stqa.pft.addressbook.helpers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import sun.plugin2.util.BrowserType;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    WebDriver wd;
+    public WebDriver wd;
 
-    private ContactHelper ContactHelper;
+    private ru.stqa.pft.addressbook.helpers.ContactHelper ContactHelper;
 
     private NavigationHelper navigationHelper;
-    private groupHelper groupHelper;
+    private ru.stqa.pft.addressbook.helpers.groupHelper groupHelper;
     private String browser;
 
     public ApplicationManager(String browser) {
@@ -23,7 +22,7 @@ public class ApplicationManager {
     }
 
 
-    protected void init() {
+    public void init() {
         if (browser.equals(org.openqa.selenium.remote.BrowserType.FIREFOX)){
             wd= new FirefoxDriver (new FirefoxOptions().setLegacy(true));
         } else if (browser.equals(org.openqa.selenium.remote.BrowserType.CHROME)){
@@ -43,11 +42,11 @@ public class ApplicationManager {
 
 
 
-    protected void stop() {
+    public void stop() {
         wd.quit();
     }
 
-    public ru.stqa.pft.addressbook.groupHelper getGroupHelper() {
+    public ru.stqa.pft.addressbook.helpers.groupHelper getGroupHelper() {
         return groupHelper;
     }
 
