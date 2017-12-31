@@ -11,7 +11,7 @@ public class CreationGroupTest extends TestBase {
 
         app.getNavigationHelper().goToGroupPage();
         app.getGroupHelper().initGroupCreation();
-        app.getGroupHelper().fillGroupForm(new GroupData("Polska", "małopolska", "Kraków"));
+        app.getGroupHelper().fillGroupForm(new GroupData("Polska", null, null));
         app.getGroupHelper().submitGroup();
         app.getGroupHelper().returnToAllGroup();
     }
