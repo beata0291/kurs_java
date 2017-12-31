@@ -11,7 +11,7 @@ public class GroupModificationTests extends TestBase {
         app.getNavigationHelper().goToGroupPage();
         app.getGroupHelper().selectGroup();
         app.getGroupHelper().clickEditGroup();
-        app.getGroupHelper().fillGroupForm(new GroupData("Polska", "małopolska", "Kraków"));
+        app.getGroupHelper().fillGroupForm(new GroupData("Polska", null, null));
         app.getGroupHelper().submitModificationGroup();
         app.getGroupHelper().returnToAllGroup();
 
