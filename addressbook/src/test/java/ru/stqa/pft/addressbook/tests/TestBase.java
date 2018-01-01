@@ -29,9 +29,11 @@ public class TestBase {
     public void tearDown() {
         app.stop();
     }
-
+//przenieść do NavigationTest - funkcja if sprawcza czy na stronie znajduje się tabela//
     public void returnToHomePage() {
-        click(By.linkText("home page"));
+        if (isElementPresent(By.id("maintable"))){
+            return;}
+        click(By.linkText("home"));
     }
 
     public void submitAddress() {
