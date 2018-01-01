@@ -24,11 +24,6 @@ public class TestBase extends AddressHelpeer {
     }
 
 
-    public void returnToHomePage() {
-        click(By.linkText("home page"));
-    }
-
-
     public void submitAddress() {
         app.wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
     }
