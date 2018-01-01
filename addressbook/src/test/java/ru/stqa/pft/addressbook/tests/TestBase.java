@@ -11,7 +11,7 @@ import ru.stqa.pft.addressbook.models.GroupAdressData;
 
 public class TestBase extends AddressHelpeer {
 
-    protected final ApplicationManager app = new ApplicationManager(BrowserType.CHROME);FirefoxDriver wd;
+    public ApplicationManager app = new ApplicationManager(BrowserType.CHROME);FirefoxDriver wd;
 
     @BeforeMethod
     public void setUp() throws Exception {
@@ -23,15 +23,17 @@ public class TestBase extends AddressHelpeer {
         app.stop();
     }
 
-    protected void returnToHomePage() {
-        app.wd.findElement(By.linkText("home page")).click();
+
+    public void returnToHomePage() {
+        click(By.linkText("home page"));
     }
 
-    protected void submitAddress() {
+
+    public void submitAddress() {
         app.wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
     }
 
-    protected void fillAddressForm(GroupAdressData groupAdressData) {
+    public void fillAddressForm(GroupAdressData groupAdressData) {
         app.wd.findElement(By.name("firstname")).click();
         app.wd.findElement(By.name("firstname")).clear();
         app.wd.findElement(By.name("firstname")).sendKeys(groupAdressData.getFirstName());
@@ -49,34 +51,38 @@ public class TestBase extends AddressHelpeer {
         app.wd.findElement(By.name("mobile")).sendKeys(groupAdressData.getPhones());
     }
 
-    protected void initAddressCreation() {
+    public void initAddressCreation() {
         app.wd.findElement(By.name("firstname")).click();
-        app.wd.findElement(By.name("firstname")).clear();
+
     }
 
-    protected void goToNewAddressPage() {
+    public void goToNewAddressPage() {
         app.wd.findElement(By.linkText("add new")).click();
     }
 
-    protected void clickToUpdateAddress() {
-        wd.findElement(By.xpath("//div[@id='content']/form[1]/input[22]")).click();
+    public void clickToUpdateAddress() {
+        click(By.name("update"));
     }
 
-    protected void clickToEditAddress() {
-        wd.findElement(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img")).click();
+    public void clickToEditAddress() {
+        click(By.name("edit"));
     }
 
     public void acceptToDeleteAddress() {
-        wd.findElement(By.cssSelector("div.msgbox")).click();
+        click(By.cssSelector("div.msgbox"));
     }
 
     public void clickToDeleteAddress() {
-        wd.findElement(By.xpath("//div[@id='content']/form[2]/div[2]/input")).click();
+        click(By.name("delete"));
     }
 
     public void selectAddress() {
-        if (!wd.findElement(By.id("17")).isSelected()) {
-            wd.findElement(By.id("17")).click();
+        click(By.name("selected[]"));
         }
+
+    private void click(By locator) {
     }
+
+
 }
+
