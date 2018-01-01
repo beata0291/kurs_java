@@ -13,10 +13,9 @@ public class CreationAddress extends TestBase {
 
         goToNewAddressPage();
         initAddressCreation();
-        fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455"));
+        fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", "Polska"));
         submitAddress();
         returnToHomePage();
     }
-
 
 }

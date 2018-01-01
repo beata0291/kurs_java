@@ -11,11 +11,11 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
     public WebDriver wd;
 
-    private ru.stqa.pft.addressbook.helpers.ContactHelper ContactHelper;
+    public ru.stqa.pft.addressbook.helpers.ContactHelper ContactHelper;
 
-    private NavigationHelper navigationHelper;
-    private ru.stqa.pft.addressbook.helpers.groupHelper groupHelper;
-    private String browser;
+    public NavigationHelper navigationHelper;
+    public ru.stqa.pft.addressbook.helpers.groupHelper groupHelper;
+    public String browser;
 
     public ApplicationManager(String browser) {
         this.browser = browser;

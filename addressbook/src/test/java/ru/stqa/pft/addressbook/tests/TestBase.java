@@ -2,16 +2,21 @@ package ru.stqa.pft.addressbook.tests;
 
 import org.omg.CosNaming.NamingContextExtPackage.AddressHelper;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import ru.stqa.pft.addressbook.helpers.ApplicationManager;
+import ru.stqa.pft.addressbook.helpers.BaseHelper;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
 
-public class TestBase extends AddressHelpeer {
+public class TestBase  {
 
-    public ApplicationManager app = new ApplicationManager(BrowserType.CHROME);FirefoxDriver wd;
+
+    public ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
 
     @BeforeMethod
     public void setUp() throws Exception {
@@ -23,6 +28,9 @@ public class TestBase extends AddressHelpeer {
         app.stop();
     }
 
+    public void returnToHomePage() {
+        click(By.linkText("home page"));
+    }
 
     public void submitAddress() {
         app.wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
@@ -44,7 +52,12 @@ public class TestBase extends AddressHelpeer {
         app.wd.findElement(By.name("mobile")).click();
         app.wd.findElement(By.name("mobile")).clear();
         app.wd.findElement(By.name("mobile")).sendKeys(groupAdressData.getPhones());
+
+        if (isElementPresent(By.name("new_group"))) {
+            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(GroupAdressData.getGroup());
+        }
     }
+    
 
     public void initAddressCreation() {
         app.wd.findElement(By.name("firstname")).click();
@@ -75,7 +88,7 @@ public class TestBase extends AddressHelpeer {
         click(By.name("selected[]"));
         }
 
-    private void click(By locator) {
+    public void click(By locator) {
     }
 
 
