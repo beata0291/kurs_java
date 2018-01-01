@@ -13,7 +13,7 @@ public class EditAddress extends TestBase {
     public void testEditAddress() {
         selectAddress();
         clickToEditAddress();
-        fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", null));
+        fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", null), false);
         clickToUpdateAddress();
         returnToHomePage();
     }

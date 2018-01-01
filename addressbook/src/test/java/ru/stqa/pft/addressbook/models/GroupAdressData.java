@@ -37,7 +37,7 @@ public class GroupAdressData {
         return phones;
     }
 
-    public static String getGroup() {
+    public String getGroup() {
         return group;
     }
 }

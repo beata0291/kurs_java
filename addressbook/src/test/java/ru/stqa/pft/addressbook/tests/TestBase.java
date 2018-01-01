@@ -7,15 +7,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import ru.stqa.pft.addressbook.helpers.ApplicationManager;
 import ru.stqa.pft.addressbook.helpers.BaseHelper;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
 
-public class TestBase  {
+public class TestBase {
 
 
+    public WebDriver wd;
     public ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
 
     @BeforeMethod
@@ -36,7 +38,7 @@ public class TestBase  {
         app.wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
     }
 
-    public void fillAddressForm(GroupAdressData groupAdressData) {
+    public void fillAddressForm(GroupAdressData groupAdressData, boolean Creation) {
         app.wd.findElement(By.name("firstname")).click();
         app.wd.findElement(By.name("firstname")).clear();
         app.wd.findElement(By.name("firstname")).sendKeys(groupAdressData.getFirstName());
@@ -53,11 +55,20 @@ public class TestBase  {
         app.wd.findElement(By.name("mobile")).clear();
         app.wd.findElement(By.name("mobile")).sendKeys(groupAdressData.getPhones());
 
-        if (isElementPresent(By.name("new_group"))) {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(GroupAdressData.getGroup());
+        if (Creation) new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(GroupAdressData.getGroup());
+        else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+
         }
     }
-    
+    public boolean isElementPresent(By locator) {
+        try {
+            wd.findElement(locator);
+            return true;
+        } catch (NoSuchElementException ex) {
+            return false;
+        }
+    }
 
     public void initAddressCreation() {
         app.wd.findElement(By.name("firstname")).click();
@@ -86,11 +97,9 @@ public class TestBase  {
 
     public void selectAddress() {
         click(By.name("selected[]"));
-        }
+    }
 
     public void click(By locator) {
     }
 
-
 }
-
