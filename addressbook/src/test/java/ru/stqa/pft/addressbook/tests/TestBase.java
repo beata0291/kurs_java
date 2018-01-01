@@ -32,6 +32,8 @@ public class TestBase extends AddressHelpeer {
     }
 
     protected void fillAddressForm(GroupAdressData groupAdressData) {
+        app.wd.findElement(By.name("firstname")).click();
+        app.wd.findElement(By.name("firstname")).clear();
         app.wd.findElement(By.name("firstname")).sendKeys(groupAdressData.getFirstName());
         app.wd.findElement(By.name("lastname")).click();
         app.wd.findElement(By.name("lastname")).clear();
