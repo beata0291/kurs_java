@@ -70,8 +70,4 @@ public class ApplicationManager {
     }
 
 
-
-    public void click(By locator) {
-    }
-
 }
