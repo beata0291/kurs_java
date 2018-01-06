@@ -11,11 +11,11 @@ public class CreationAddress extends TestBase {
     @Test
     public void CreationAddress() {
 
-        goToNewAddressPage();
-        initAddressCreation();
-        fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", "Polska"), true);
-        submitAddress();
-        returnToHomePage();
+        app.getContactHelper().goToNewAddressPage();
+        app.getContactHelper().initAddressCreation();
+        app.getContactHelper().fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", "Polska"), true);
+        app.getContactHelper().submitAddress();
+        app.getNavigationHelper().returnToHomePage();
     }
 
 }

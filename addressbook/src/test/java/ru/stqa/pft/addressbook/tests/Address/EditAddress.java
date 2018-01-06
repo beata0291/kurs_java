@@ -11,11 +11,11 @@ public class EditAddress extends TestBase {
 
     @Test
     public void testEditAddress() {
-        selectAddress();
-        clickToEditAddress();
-        fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", null), false);
-        clickToUpdateAddress();
-        returnToHomePage();
+        app.getContactHelper().selectAddress();
+        app.getContactHelper().clickToEditAddress();
+        app.getContactHelper().fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", null), false);
+        app.getContactHelper().clickToUpdateAddress();
+        app.getNavigationHelper().returnToHomePage();
     }
 
 

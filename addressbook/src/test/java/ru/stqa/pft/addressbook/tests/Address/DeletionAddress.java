@@ -11,9 +11,9 @@ public class DeletionAddress extends TestBase{
     
     @Test
     public void testDeletionAddress() {
-        selectAddress();
-        clickToDeleteAddress();
-        acceptToDeleteAddress();
+        app.getContactHelper().selectAddress();
+        app.getContactHelper().clickToDeleteAddress();
+        app.getContactHelper().acceptToDeleteAddress();
     }
 
 

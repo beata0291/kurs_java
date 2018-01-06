@@ -14,6 +14,12 @@ public class BaseHelper {
     public BaseHelper(WebDriver wd) {
         this.wd = wd;
     }
+    public void login(String username, String password) {
+        type(By.name("user"), username);
+        type(By.name("pass"), password);
+        click(By.xpath("//form[@id='LoginForm']/input[3]"));
+
+    }
 
     public boolean isElementPresent(By locator) {
         try {
