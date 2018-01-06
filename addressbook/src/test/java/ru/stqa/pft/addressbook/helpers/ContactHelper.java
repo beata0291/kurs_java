@@ -38,7 +38,7 @@ public class ContactHelper extends BaseHelper {
     }
 
     public void clickToDeleteAddress() {
-        click(By.name("delete"));
+        click(By.xpath("//div[@id='content']/form[2]/input[2]"));
     }
 
     public void selectAddress() {
