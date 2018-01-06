@@ -30,7 +30,7 @@ public class ContactHelper extends BaseHelper {
     }
 
     public void clickToEditAddress() {
-        click(By.name("edit"));
+        click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
     }
 
     public void acceptToDeleteAddress() {
