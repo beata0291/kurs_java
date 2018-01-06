@@ -11,10 +11,10 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
     public WebDriver wd;
 
-    public ru.stqa.pft.addressbook.helpers.ContactHelper ContactHelper;
+    public ContactHelper ContactHelper;
 
     public NavigationHelper navigationHelper;
-    public ru.stqa.pft.addressbook.helpers.groupHelper groupHelper;
+    public groupHelper groupHelper;
     public String browser;
 
     public ApplicationManager(String browser) {
@@ -36,7 +36,6 @@ public class ApplicationManager {
         groupHelper = new groupHelper(wd);
         navigationHelper = new NavigationHelper(wd);
         ContactHelper = new ContactHelper(wd);
-
         ContactHelper.login("admin", "secret");
     }
 

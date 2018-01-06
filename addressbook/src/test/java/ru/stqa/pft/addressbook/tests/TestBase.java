@@ -57,7 +57,7 @@ public class TestBase {
         app.wd.findElement(By.name("mobile")).clear();
         app.wd.findElement(By.name("mobile")).sendKeys(groupAdressData.getPhones());
 
-        if (Creation) new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(GroupAdressData.getGroup());
+        if (Creation) new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(groupAdressData.getGroup());
         else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
 
@@ -90,7 +90,7 @@ public class TestBase {
     }
 
     public void acceptToDeleteAddress() {
-        click(By.cssSelector("div.msgbox"));
+        wd.switchTo().alert().accept();
     }
 
     public void clickToDeleteAddress() {
