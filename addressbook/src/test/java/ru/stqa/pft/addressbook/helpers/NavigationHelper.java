@@ -21,8 +21,8 @@ public class NavigationHelper extends BaseHelper {
 }
     //przenieść do NavigationTest - funkcja if sprawcza czy na stronie znajduje się tabela//
     public void returnToHomePage() {
-    /*    if (isElementPresent(By.id("maintable"))){
-            return;}*/
+    if (isElementPresent(By.id("maintable"))){
+            return;}
         click(By.linkText("home"));
     }
 }
