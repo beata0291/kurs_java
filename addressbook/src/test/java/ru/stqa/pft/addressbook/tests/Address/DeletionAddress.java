@@ -12,16 +12,15 @@ public class DeletionAddress extends TestBase{
     
     @Test
     public void testDeletionAddress() {
-        app.getContactHelper().selectAddress();
-        if (! app.getContactHelper().isThereAContact()) {
+        if (!app.getContactHelper().isThereAContact()) {
             app.getContactHelper().createContact(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", null));
+            app.getContactHelper().selectAddress();
+            
+            app.getContactHelper().clickToDeleteAddress();
+            app.getContactHelper().acceptToDeleteAddress();
+
         }
 
-        app.getContactHelper().clickToDeleteAddress();
-        app.getContactHelper().acceptToDeleteAddress();
-
     }
-
-
 }
 
