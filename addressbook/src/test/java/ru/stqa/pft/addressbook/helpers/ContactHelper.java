@@ -65,10 +65,10 @@ public class ContactHelper extends BaseHelper {
         wd.findElement(By.name("mobile")).click();
         wd.findElement(By.name("mobile")).clear();
         wd.findElement(By.name("mobile")).sendKeys(groupAdressData.getPhones());
-/*
+
         if (Creation) new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(groupAdressData.getGroup());
         else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
-        }*/
+        }
     }
 }
