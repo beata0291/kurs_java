@@ -47,4 +47,15 @@ public class groupHelper extends BaseHelper {
     public void clickDeleteGroup() {
         click(By.name("delete"));
     }
+
+    public void createGroup(GroupData group) {
+        initGroupCreation();
+        fillGroupForm(group);
+        submitGroup();
+        returnToAllGroup();
+    }
+
+    public boolean isThereAGroup() {
+        return isElementPresent(By.name("selected[]"));
+    }
 }

@@ -7,15 +7,18 @@ import ru.stqa.pft.addressbook.tests.TestBase;
 public class GroupModificationTests extends TestBase {
 
     @Test
-        public void testGroupModification(){
+    public void testGroupModification() {
         app.getNavigationHelper().goToGroupPage();
-        app.getGroupHelper().selectGroup();
-        app.getGroupHelper().clickEditGroup();
-        app.getGroupHelper().fillGroupForm(new GroupData("Polska", null, null));
-        app.getGroupHelper().submitModificationGroup();
-        app.getGroupHelper().returnToAllGroup();
+        if (!app.getGroupHelper().isThereAGroup()) {
+            app.getGroupHelper().createGroup(new GroupData("test1", null, null));
+            app.getGroupHelper().selectGroup();
+            app.getGroupHelper().clickEditGroup();
+            app.getGroupHelper().fillGroupForm(new GroupData("Polska", null, null));
+            app.getGroupHelper().submitModificationGroup();
+            app.getGroupHelper().returnToAllGroup();
 
 
         }
 
+    }
 }
