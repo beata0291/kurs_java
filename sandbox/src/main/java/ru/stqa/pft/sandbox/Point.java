@@ -2,7 +2,6 @@ package ru.stqa.pft.sandbox;
 
 public class Point {
 
-
     public double x;
     public double y;
 
@@ -18,8 +17,8 @@ public class Point {
     }
 
     public static void main(String[] args) {
-        Point p1 = new Point(6.2, 1.3);
-        Point p2 = new Point(3.1, 1.4);
+        Point p1 = new Point(2.2, 6.3);
+        Point p2 = new Point(4.1, 1.1);
         System.out.println("Odległość pomiędzy punktem (" + p1.x + " , " + p1.y + ") a punktem (" + p2.x + " , " + p2.y + " ) wynosi " + distance(p1, p2));
 
     }
