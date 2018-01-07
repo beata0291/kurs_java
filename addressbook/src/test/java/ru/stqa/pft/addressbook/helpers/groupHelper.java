@@ -2,7 +2,6 @@ package ru.stqa.pft.addressbook.helpers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import ru.stqa.pft.addressbook.helpers.BaseHelper;
 import ru.stqa.pft.addressbook.models.GroupData;
 
 public class groupHelper extends BaseHelper {

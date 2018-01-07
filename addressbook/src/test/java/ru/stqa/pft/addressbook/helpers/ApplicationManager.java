@@ -7,9 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import ru.stqa.pft.addressbook.models.GroupAdressData;
 
 import java.util.concurrent.TimeUnit;
 

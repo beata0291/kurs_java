@@ -29,7 +29,6 @@ public class Point {
         double dy = this.y - p2.y;
         return Math.sqrt(dx * dx + dy * dy);
     }
-
-    }
+}
 
 
