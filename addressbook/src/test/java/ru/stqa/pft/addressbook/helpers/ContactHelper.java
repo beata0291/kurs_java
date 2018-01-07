@@ -78,6 +78,5 @@ public class ContactHelper extends BaseHelper {
         initAddressCreation();
         fillAddressForm(contact, true);
         submitAddress();
-        returnToHomePage();
     }
 }
