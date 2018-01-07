@@ -11,6 +11,7 @@ public class GroupModificationTests extends TestBase {
         app.getNavigationHelper().goToGroupPage();
         if (!app.getGroupHelper().isThereAGroup()) {
             app.getGroupHelper().createGroup(new GroupData("test1", null, null));
+        }
             app.getGroupHelper().selectGroup();
             app.getGroupHelper().clickEditGroup();
             app.getGroupHelper().fillGroupForm(new GroupData("Polska", null, null));
@@ -21,4 +22,4 @@ public class GroupModificationTests extends TestBase {
         }
 
     }
-}
+

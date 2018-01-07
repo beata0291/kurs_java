@@ -11,6 +11,9 @@ public class EditAddress extends TestBase {
 
     @Test
     public void testEditAddress() {
+        if (! app.getContactHelper().isThereAContact()) {
+            app.getContactHelper().createContact(new GroupAdressData(("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", null), false);
+        }
         app.getContactHelper().selectAddress();
         app.getContactHelper().clickToEditAddress();
         app.getContactHelper().fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", null), false);
