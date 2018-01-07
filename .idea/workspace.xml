@@ -178,11 +178,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditAddress.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EditAddress.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Address/EditAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="424">
+              <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,11 +190,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeletionAddress.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DeletionAddress.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Address/DeletionAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="189">
+              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="15" selection-end-column="136" />
               <folding />
             </state>
           </provider>
@@ -1125,15 +1125,15 @@
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/DeletionGroupTest.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/groupHelper.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java" />
-        <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Address/EditAddress.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/ContactHelper.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Address/CreationAddress.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Address/DeletionAddress.java" />
+        <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Address/EditAddress.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="314" />
     <option name="y" value="77" />
     <option name="width" value="1400" />
@@ -1362,7 +1362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DeletionAddress">
+  <component name="RunManager" selected="TestNG.EditAddress">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1632,8 +1632,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.DeletionAddress" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.EditAddress" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.EditAddress" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.DeletionAddress" />
         <item index="2" class="java.lang.String" itemvalue="TestNG.CreationAddress" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.DeletionGroupTest" />
         <item index="4" class="java.lang.String" itemvalue="Application.Point" />
@@ -1678,8 +1678,8 @@
     <history-entry file="EditAddress - 2018.01.07 at 13h 57m 46s.xml">
       <configuration name="EditAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestPoint - 2018.01.07 at 01h 34m 32s.xml">
-      <configuration name="TestPoint" configurationId="TestNG" />
+    <history-entry file="EditAddress - 2018.01.07 at 14h 42m 23s.xml">
+      <configuration name="EditAddress" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestPoint - 2018.01.07 at 01h 36m 54s.xml">
       <configuration name="TestPoint" configurationId="TestNG" />
@@ -1689,7 +1689,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2082,16 +2082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Address/EditAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/GroupData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -2178,9 +2168,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Address/DeletionAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="189">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="15" selection-end-column="136" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Address/EditAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
