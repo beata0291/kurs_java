@@ -114,8 +114,8 @@
       <file leaf-file-name="CreationGroupTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="282">
+              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -125,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/DeletionGroupTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+              <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -134,8 +134,8 @@
       <file leaf-file-name="GroupModificationTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+            <state relative-caret-position="201">
+              <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -144,13 +144,14 @@
       <file leaf-file-name="GroupHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/GroupHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="408">
+              <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
               <folding>
-                <element signature="e#884#885#0" expanded="true" />
-                <element signature="e#957#958#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-                <element signature="e#1559#1560#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1583#1584#0" expanded="true" />
+                <element signature="e#1650#1651#0" expanded="true" />
+                <element signature="e#1743#1754#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1619,16 +1620,13 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreationGroupTest - 2018.01.13 at 13h 35m 04s.xml">
-      <configuration name="CreationGroupTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CreationGroupTest - 2018.01.13 at 13h 37m 20s.xml">
-      <configuration name="CreationGroupTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CreationGroupTest - 2018.01.13 at 13h 38m 24s.xml">
-      <configuration name="CreationGroupTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="CreationGroupTest - 2018.01.13 at 13h 41m 11s.xml">
+      <configuration name="CreationGroupTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CreationGroupTest - 2018.01.13 at 14h 41m 46s.xml">
+      <configuration name="CreationGroupTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CreationGroupTest - 2018.01.13 at 14h 50m 43s.xml">
       <configuration name="CreationGroupTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="DeletionGroupTest - 2018.01.13 at 13h 47m 46s.xml">
@@ -1637,17 +1635,20 @@
     <history-entry file="DeletionGroupTest - 2018.01.13 at 14h 16m 37s.xml">
       <configuration name="DeletionGroupTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="DeletionGroupTest - 2018.01.13 at 14h 50m 53s.xml">
+      <configuration name="DeletionGroupTest" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="GroupModificationTests - 2018.01.13 at 13h 47m 58s.xml">
       <configuration name="GroupModificationTests" configurationId="TestNG" />
     </history-entry>
     <history-entry file="GroupModificationTests - 2018.01.13 at 14h 17m 00s.xml">
       <configuration name="GroupModificationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PromesTest - 2018.01.07 at 15h 44m 43s.xml">
-      <configuration name="PromesTest" configurationId="TestNG" />
+    <history-entry file="GroupModificationTests - 2018.01.13 at 14h 51m 05s.xml">
+      <configuration name="GroupModificationTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestPoint - 2018.01.07 at 01h 37m 45s.xml">
-      <configuration name="TestPoint" configurationId="TestNG" />
+    <history-entry file="GroupModificationTests - 2018.01.13 at 14h 51m 32s.xml">
+      <configuration name="GroupModificationTests" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -2049,39 +2050,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java">
+    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/GroupHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="20" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="408">
+          <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+          <folding>
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+            <element signature="e#1650#1651#0" expanded="true" />
+            <element signature="e#1743#1754#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/GroupHelper.java">
+    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="282">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/DeletionGroupTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        <state relative-caret-position="201">
+          <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
           <folding />
         </state>
       </provider>
