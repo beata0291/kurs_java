@@ -66,8 +66,8 @@
       <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="462">
+              <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -102,7 +102,7 @@
       <file leaf-file-name="Collections.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Collections.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="168">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -114,18 +114,18 @@
       <file leaf-file-name="CreationGroupTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="68" />
+            <state relative-caret-position="357">
+              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeletionGroupTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/DeletionGroupTest.java">
+      <file leaf-file-name="GroupModificationTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="333">
+              <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -134,22 +134,18 @@
       <file leaf-file-name="GroupData.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/GroupData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="336">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
-                <element signature="e#658#659#0" expanded="true" />
-                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#1353#1354#0" expanded="true" />
+                <element signature="e#1378#1379#0" expanded="true" />
+                <element signature="e#1409#1410#0" expanded="true" />
+                <element signature="e#1436#1437#0" expanded="true" />
+                <element signature="e#1469#1470#0" expanded="true" />
+                <element signature="e#1498#1499#0" expanded="true" />
+                <element signature="e#1531#1532#0" expanded="true" />
+                <element signature="e#1560#1561#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupModificationTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -157,14 +153,13 @@
       <file leaf-file-name="GroupHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/GroupHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+            <state relative-caret-position="488">
+              <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
               <folding>
                 <element signature="e#975#976#0" expanded="true" />
                 <element signature="e#1048#1049#0" expanded="true" />
                 <element signature="e#1583#1584#0" expanded="true" />
                 <element signature="e#1650#1651#0" expanded="true" />
-                <element signature="e#1743#1754#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1102,10 +1097,10 @@
         <option value="$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Collections.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java" />
-        <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/GroupHelper.java" />
-        <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java" />
-        <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/GroupData.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/DeletionGroupTest.java" />
+        <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java" />
+        <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/GroupHelper.java" />
+        <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/GroupData.java" />
       </list>
     </option>
   </component>
@@ -1131,18 +1126,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="sandbox" type="58d84e3e:PackageViewProjectNode" />
-              <item name="sandbox" type="eaaa3913:PackageViewModuleGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1293,6 +1277,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sandbox" type="58d84e3e:PackageViewProjectNode" />
+              <item name="sandbox" type="eaaa3913:PackageViewModuleGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Tests">
           <expand>
@@ -1304,7 +1299,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1338,7 +1333,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.DeletionGroupTest">
+  <component name="RunManager" selected="TestNG.GroupModificationTests">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1608,8 +1603,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.DeletionGroupTest" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.GroupModificationTests" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.GroupModificationTests" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.DeletionGroupTest" />
         <item index="2" class="java.lang.String" itemvalue="TestNG.CreationGroupTest" />
         <item index="3" class="java.lang.String" itemvalue="Application.Collections" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.PrimesTest" />
@@ -1633,22 +1628,10 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreationGroupTest - 2018.01.13 at 14h 41m 46s.xml">
-      <configuration name="CreationGroupTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CreationGroupTest - 2018.01.13 at 14h 50m 43s.xml">
-      <configuration name="CreationGroupTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DeletionGroupTest - 2018.01.13 at 13h 47m 46s.xml">
-      <configuration name="DeletionGroupTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DeletionGroupTest - 2018.01.13 at 14h 16m 37s.xml">
-      <configuration name="DeletionGroupTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DeletionGroupTest - 2018.01.13 at 14h 50m 53s.xml">
-      <configuration name="DeletionGroupTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="DeletionGroupTest - 2018.01.13 at 15h 17m 10s.xml">
+      <configuration name="DeletionGroupTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeletionGroupTest - 2018.01.13 at 15h 19m 05s.xml">
       <configuration name="DeletionGroupTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="GroupModificationTests - 2018.01.13 at 13h 47m 58s.xml">
@@ -1661,6 +1644,18 @@
       <configuration name="GroupModificationTests" configurationId="TestNG" />
     </history-entry>
     <history-entry file="GroupModificationTests - 2018.01.13 at 14h 51m 32s.xml">
+      <configuration name="GroupModificationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupModificationTests - 2018.01.13 at 22h 06m 36s.xml">
+      <configuration name="GroupModificationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupModificationTests - 2018.01.13 at 22h 40m 48s.xml">
+      <configuration name="GroupModificationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupModificationTests - 2018.01.13 at 22h 41m 07s.xml">
+      <configuration name="GroupModificationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupModificationTests - 2018.01.13 at 22h 41m 26s.xml">
       <configuration name="GroupModificationTests" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1676,7 +1671,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30735457" sideWeight="0.5125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3516999" sideWeight="0.51197916" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3516999" sideWeight="0.51197916" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1688,7 +1683,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39976552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1739,7 +1734,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2040,7 +2043,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="168">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2050,57 +2053,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        <state relative-caret-position="462">
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/DeletionGroupTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/GroupHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+        <state relative-caret-position="488">
+          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding>
             <element signature="e#975#976#0" expanded="true" />
             <element signature="e#1048#1049#0" expanded="true" />
             <element signature="e#1583#1584#0" expanded="true" />
             <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1743#1754#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/GroupData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="336">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1378#1379#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1498#1499#0" expanded="true" />
+            <element signature="e#1531#1532#0" expanded="true" />
+            <element signature="e#1560#1561#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/DeletionGroupTest.java">
+    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        <state relative-caret-position="333">
+          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
           <folding />
         </state>
       </provider>
