@@ -4,11 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import ru.stqa.pft.addressbook.models.GroupData;
 
-public class groupHelper extends BaseHelper {
+public class GroupHelper extends BaseHelper {
 
 
 
-    public groupHelper(WebDriver wd) {
+    public GroupHelper(WebDriver wd) {
         super(wd);
     }
 
@@ -57,5 +57,9 @@ public class groupHelper extends BaseHelper {
 
     public boolean isThereAGroup() {
         return isElementPresent(By.name("selected[]"));
+    }
+
+    public int getGroupCount() {
+       return wd.findElements(By.name("selected[]")).size();
     }
 }
