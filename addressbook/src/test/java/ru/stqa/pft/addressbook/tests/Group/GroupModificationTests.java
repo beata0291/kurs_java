@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.tests.Group;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -22,20 +21,18 @@ public class GroupModificationTests extends TestBase {
     @Test
     public void testGroupModification() {
 
-        List<GroupData> before = app.getGroupHelper().getGroupList();
-        int index = before.size() - 1;
-        GroupData group = new GroupData()
-                .withId(before.get(index).getId()).withName("Test1").withHeader("Test2").withFooter("Test3");
+        Set<GroupData> before = app.getGroupHelper().all();
+        GroupData modifiedGroup = before.iterator().next();
 
-        app.getGroupHelper().modifyGroup(index, group);
-        List<GroupData> after = app.getGroupHelper().getGroupList();
+        GroupData group = new GroupData()
+                .withId(modifiedGroup.getId()).withName("Test1").withHeader("Test2").withFooter("Test3");
+
+        app.getGroupHelper().modifyGroup(group);
+        Set<GroupData> after = app.getGroupHelper().all();
         Assert.assertEquals(after.size(), before.size());
 
-        before.remove(index);
+        before.remove(modifiedGroup);
         before.add(group);
-        Comparator<? super GroupData> byId = (g1, g2) -> Integer.compare(g1.getId(), g2.getId());
-        before.sort(byId);
-        after.sort(byId);
         Assert.assertEquals(before, after);
 
         }
