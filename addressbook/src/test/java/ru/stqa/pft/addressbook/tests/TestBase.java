@@ -9,7 +9,9 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import ru.stqa.pft.addressbook.helpers.ApplicationManager;
 import ru.stqa.pft.addressbook.helpers.BaseHelper;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
@@ -18,14 +20,14 @@ public class TestBase {
 
 
     public WebDriver wd;
-    public ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
+    public static ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
 
-    @BeforeMethod
+    @BeforeSuite
     public void setUp() throws Exception {
         app.init();
     }
 
-    @AfterMethod
+    @AfterSuite
     public void tearDown() {
         app.stop();
     }
