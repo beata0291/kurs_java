@@ -10,10 +10,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class GroupHelper extends BaseHelper {
+public class GroupsHelper extends BaseHelper {
 
 
-    public GroupHelper(WebDriver wd) {
+    public GroupsHelper(WebDriver wd) {
         super(wd);
     }
 
