@@ -28,13 +28,13 @@ public class ContactHelper extends BaseHelper {
     }
 
     public void clickToEditAddress() {
-        click(By.name("edit"));
+        click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
     }
 
 
 
     public void clickToDeleteAddress() {
-        click(By.name("delete"));
+        click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
     }
 
     public void acceptToDeleteAddress() {
@@ -54,18 +54,16 @@ public class ContactHelper extends BaseHelper {
         type(By.name("lastname"), groupAdressData.getLastName());
         type(By.name("address"), groupAdressData.getAddress());
         type(By.name("email"), groupAdressData.getEmail());
-        type(By.name("phones"), groupAdressData.getPhones());
-        type(By.name("group"), groupAdressData.getGroup());
+        type(By.name("mobile"), groupAdressData.getMobile());
 
 
         if (Creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(groupAdressData.getGroup());
-        }
-        else {
+        } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
-    }
 
+    }
     public boolean isThereAContact() {
         return isElementPresent(By.name("selected[]"));
     }

@@ -11,11 +11,11 @@ public class EditAddress extends TestBase {
     public void testEditAddress() {
         app.getNavigationHelper().goToHomePage();
         if (!app.getContactHelper().isThereAContact()) {
-            app.getContactHelper().createContact(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", null));
+            app.getContactHelper().createContact(new GroupAdressData("test_first_name", "test_last_name", "test_address", "test_email", "test_mobile", "Test1"));
         }
             app.getContactHelper().selectAddress();
             app.getContactHelper().clickToEditAddress();
-            app.getContactHelper().fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", null), false);
+            app.getContactHelper().fillAddressForm(new GroupAdressData("test_first_name", "test_last_name", "test_address", "test_email", "test_mobile", "Test1"), false);
             app.getContactHelper().clickToUpdateAddress();
             app.getNavigationHelper().goToHomePage();
         }
