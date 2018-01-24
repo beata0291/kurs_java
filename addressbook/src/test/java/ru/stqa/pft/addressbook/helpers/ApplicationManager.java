@@ -33,7 +33,7 @@ public class ApplicationManager {
         }
 
         wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-        wd.get("http://localhost:8080/addressbook/");
+        wd.get("http://localhost:8080/addressbook/group.php");
         GroupsHelper = new GroupsHelper(wd);
         NavigationHelper = new NavigationHelper(wd);
         ContactHelper = new ContactHelper(wd);
