@@ -10,12 +10,12 @@ public class CreationAddress extends TestBase {
 
     @Test
     public void CreationAddress() {
-
+        app.getNavigationHelper().goToHomePage();
         app.getContactHelper().goToNewAddressPage();
         app.getContactHelper().initAddressCreation();
         app.getContactHelper().fillAddressForm(new GroupAdressData("Jan", "Kowalski", "Warszawa", "jan@wp.pl", "785456225455", "Polska"), true);/*działą gdy mamy dodaną grupę "Polska*/
         app.getContactHelper().submitAddress();
-        app.getNavigationHelper().returnToHomePage();
+        app.getNavigationHelper().goToHomePage();
     }
 
 }

@@ -1,12 +1,12 @@
 package ru.stqa.pft.addressbook.models;
 
 public class GroupAdressData {
-    private final String firstName;
-    private final String lastName;
-    private final String address;
-    private final String email;
-    private final String phones;
-    private final String group;
+    private  String firstName;
+    private  String lastName;
+    private  String address;
+    private  String email;
+    private  String phones;
+    private  String group;
 
     public GroupAdressData(String firstName, String lastName, String address, String email, String phones, String group) {
         this.firstName = firstName;
@@ -16,6 +16,7 @@ public class GroupAdressData {
         this.phones = phones;
         this.group = group;
     }
+
 
     public String getFirstName() {
         return firstName;

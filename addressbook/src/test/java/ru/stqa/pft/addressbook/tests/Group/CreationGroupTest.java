@@ -7,7 +7,6 @@ import ru.stqa.pft.addressbook.tests.TestBase;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
-import static org.testng.Assert.assertEquals;
 
 public class CreationGroupTest extends TestBase {
 

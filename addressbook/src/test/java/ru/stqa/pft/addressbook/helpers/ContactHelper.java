@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
-import ru.stqa.pft.addressbook.models.GroupData;
 
 public class ContactHelper extends BaseHelper {
 
@@ -29,15 +28,17 @@ public class ContactHelper extends BaseHelper {
     }
 
     public void clickToEditAddress() {
-        click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+        click(By.name("edit"));
+    }
+
+
+
+    public void clickToDeleteAddress() {
+        click(By.name("delete"));
     }
 
     public void acceptToDeleteAddress() {
         wd.switchTo().alert().accept();
-    }
-
-    public void clickToDeleteAddress() {
-        click(By.xpath("//div[@id='content']/form[2]/div[2]/input"));
     }
 
     public void selectAddress() {
@@ -49,23 +50,17 @@ public class ContactHelper extends BaseHelper {
     }
 
     public void fillAddressForm(GroupAdressData groupAdressData, boolean Creation) {
-        wd.findElement(By.name("firstname")).click();
-        wd.findElement(By.name("firstname")).clear();
-        wd.findElement(By.name("firstname")).sendKeys(groupAdressData.getFirstName());
-        wd.findElement(By.name("lastname")).click();
-        wd.findElement(By.name("lastname")).clear();
-        wd.findElement(By.name("lastname")).sendKeys(groupAdressData.getLastName());
-        wd.findElement(By.name("address")).click();
-        wd.findElement(By.name("address")).clear();
-        wd.findElement(By.name("address")).sendKeys(groupAdressData.getAddress());
-        wd.findElement(By.name("email")).click();
-        wd.findElement(By.name("email")).clear();
-        wd.findElement(By.name("email")).sendKeys(groupAdressData.getEmail());
-        wd.findElement(By.name("mobile")).click();
-        wd.findElement(By.name("mobile")).clear();
-        wd.findElement(By.name("mobile")).sendKeys(groupAdressData.getPhones());
+        type(By.name("firstname"), groupAdressData.getFirstName());
+        type(By.name("lastname"), groupAdressData.getLastName());
+        type(By.name("address"), groupAdressData.getAddress());
+        type(By.name("email"), groupAdressData.getEmail());
+        type(By.name("phones"), groupAdressData.getPhones());
+        type(By.name("group"), groupAdressData.getGroup());
 
-        if (Creation) new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(groupAdressData.getGroup());
+
+        if (Creation) {
+            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(groupAdressData.getGroup());
+        }
         else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
