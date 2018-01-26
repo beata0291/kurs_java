@@ -10,7 +10,7 @@ public class TestBase {
 
 
     public WebDriver wd;
-    public static ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
+    protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser"), BrowserType.FIREFOX);
 
     @BeforeSuite
     public void setUp() throws Exception {

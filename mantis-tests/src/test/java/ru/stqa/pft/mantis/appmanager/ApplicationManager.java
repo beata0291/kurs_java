@@ -6,19 +6,28 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    public WebDriver wd;
+    private final Properties properties;
+   WebDriver wd;
 
-    private String browser;
+           private String browser;
 
-    public ApplicationManager(String browser) {
-        this.browser = browser;
+           public ApplicationManager(String property, String browser) {
+            this.browser = browser;
+            properties = new Properties();
+          }
 
-    }
 
-    public void init() {
+    public void init()throws IOException {
+        String target = System.getProperty("target", "local");
+        properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
+
         if (browser.equals(org.openqa.selenium.remote.BrowserType.FIREFOX)) {
             wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
         } else if (browser.equals(org.openqa.selenium.remote.BrowserType.CHROME)) {
@@ -28,13 +37,19 @@ public class ApplicationManager {
         }
 
         wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-        wd.get("http://localhost:8080/addressbook/group.php");
+        wd.get(properties.getProperty("web.baseUrl"));
     }
 
     public void stop() {
         wd.quit();
     }
 
+    public HttpSession newSession() {
+        return new HttpSession(this);
+    }
 
+    public String getProperty(String key) {
+        return properties.getProperty(key);
 
+    }
 }
