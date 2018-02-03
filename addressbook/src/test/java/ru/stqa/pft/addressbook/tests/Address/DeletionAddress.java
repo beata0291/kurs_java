@@ -9,12 +9,12 @@ import java.util.List;
 
 public class DeletionAddress extends TestBase{
 
-    
+
     @Test
     public void testDeletionAddress() {
         app.getNavigationHelper().goToHomePage();
         if (!app.getContactHelper().isThereAContact()) {
-            app.getContactHelper().createContact(new GroupAdressData("test_first_name", "test_last_name", "test_address", "test_email", "test_mobile", "Test1"));
+            app.getContactHelper().createContact(new GroupAdressData("test_last_name", "test_first_name", "test_address", "test_email", "test_mobile", "Test1"));
         }
         List<GroupAdressData> before = app.getContactHelper().getContactList();
            app.getContactHelper().selectAddress(before.size() - 1);
@@ -28,6 +28,7 @@ public class DeletionAddress extends TestBase{
 
         before.remove(before.size() -1);
             Assert.assertEquals(before, after);
+            
         }
 
     }

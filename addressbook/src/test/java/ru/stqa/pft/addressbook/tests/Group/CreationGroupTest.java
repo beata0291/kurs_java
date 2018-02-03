@@ -27,7 +27,7 @@ public class CreationGroupTest extends TestBase {
 
         group.setId(after.stream().max(Comparator.comparingInt(GroupData::getId)).get().getId());
             before.add(group);
-                    Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
+            Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
 
 
 

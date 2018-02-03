@@ -4,8 +4,8 @@ public class GroupAdressData {
 
 
     private int id;
-    private  String firstName;
     private  String lastName;
+    private  String firstName;
     private  String address;
     private  String email;
     private  String mobile;
@@ -16,10 +16,10 @@ public class GroupAdressData {
         return id;
     }
 
-    public GroupAdressData(int id, String firstName, String lastName, String address, String email, String mobile, String group) {
+    public GroupAdressData(int id, String lastName, String firstName, String address, String email, String mobile, String group) {
         this.id = id;
-        this.firstName = firstName;
         this.lastName = lastName;
+        this.firstName = firstName;
         this.address = address;
         this.email = email;
         this.mobile = mobile;
@@ -27,22 +27,22 @@ public class GroupAdressData {
     }
 
 
-    public GroupAdressData(String firstName, String lastName, String address, String email, String mobile, String group) {
+    public GroupAdressData(String lastName,String firstName, String address, String email, String mobile, String group) {
         this.id = 0;
-        this.firstName = firstName;
         this.lastName = lastName;
+        this.firstName = firstName;
         this.address = address;
         this.email = email;
         this.mobile = mobile;
         this.group = group;
-    }
-
-    public String getFirstName() {
-        return firstName;
     }
 
     public String getLastName() {
         return lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
     }
 
     public String getAddress() {
@@ -68,23 +68,25 @@ public class GroupAdressData {
         GroupAdressData that = (GroupAdressData) o;
 
         if (id != that.id) return false;
-        if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
-        return lastName != null ? lastName.equals(that.lastName) : that.lastName == null;
+        if (lastName != null ? lastName.equals(that.lastName) : that.lastName == null) return false;
+        return firstName != null ? !firstName.equals(that.firstName) : that.firstName != null;
+
     }
 
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+
         return result;
     }
     @Override
     public String toString() {
         return "GroupAdressData{" +
                 "id='" + id + '\'' +
-                ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
                 '}';
     }
 
