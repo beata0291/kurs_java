@@ -12,7 +12,7 @@ public class EditAddress extends TestBase {
 
     @Test
     public void testEditAddress() {
-        app.getNavigationHelper().goToHomePage();
+        app.goTo().goToHomePage();
         if (!app.getContactHelper().isThereAContact()) {
             app.getContactHelper().createContact(new GroupAdressData("test_last_name", "test_first_name", "test_address", "test_email", "test_mobile", "Test1"));
         }
@@ -23,7 +23,7 @@ public class EditAddress extends TestBase {
             GroupAdressData contact = new GroupAdressData(before.get(0).getId(),"test_last_name", "test_first_name", "test_address", "test_email", "test_mobile", "Test1");
             app.getContactHelper().fillAddressForm(contact, false);
             app.getContactHelper().clickToUpdateAddress();
-            app.getNavigationHelper().goToHomePage();
+            app.goTo().goToHomePage();
 
         List<GroupAdressData> after = app.getContactHelper().getContactList();
             Assert.assertEquals(after.size(), before.size());

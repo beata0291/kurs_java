@@ -6,30 +6,27 @@ import ru.stqa.pft.addressbook.models.GroupData;
 import ru.stqa.pft.addressbook.models.Groups;
 import ru.stqa.pft.addressbook.tests.TestBase;
 
-import java.util.Comparator;
-import java.util.HashSet;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class CreationGroupTest extends TestBase {
 
     @Test
     public void testCreationGroup() {
 
-        app.getNavigationHelper().goToGroupPage();
+        app.goTo().groupPage();
 
-        Groups before = app.getGroupsHelper().all();
+        Groups before = app.Group().all();
         GroupData group = new GroupData().withName("Test");
 
-            app.getGroupsHelper().createGroup(group);
+            app.Group().create(group);
 
-        Groups after = app.getGroupsHelper().all();
+        Groups after = app.Group().all();
         Assert.assertEquals(after.size(), before.size() + 1);
 
 
-        group.setId(after.stream().max(Comparator.comparingInt(GroupData::getId)).get().getId());
-            before.add(group);
-            Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
-
-
+        assertThat(after, equalTo(
+                before.withAdded(group.withId(after.stream().mapToInt((g)->g.getId()).max().getAsInt()))));
 
 
     }

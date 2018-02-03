@@ -12,7 +12,7 @@ public class DeletionAddress extends TestBase{
 
     @Test
     public void testDeletionAddress() {
-        app.getNavigationHelper().goToHomePage();
+        app.goTo().goToHomePage();
         if (!app.getContactHelper().isThereAContact()) {
             app.getContactHelper().createContact(new GroupAdressData("test_last_name", "test_first_name", "test_address", "test_email", "test_mobile", "Test1"));
         }
@@ -21,7 +21,7 @@ public class DeletionAddress extends TestBase{
 
             app.getContactHelper().clickToDeleteAddress();
             app.getContactHelper().acceptToDeleteAddress();
-            app.getNavigationHelper().goToHomePage();
+            app.goTo().goToHomePage();
 
         List<GroupAdressData> after = app.getContactHelper().getContactList();
             Assert.assertEquals(after.size(), before.size() - 1);

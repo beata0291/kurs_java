@@ -14,7 +14,7 @@ public class CreationAddress extends TestBase {
 
     @Test
     public void CreationAddress() {
-        app.getNavigationHelper().goToHomePage();
+        app.goTo().goToHomePage();
 
         List<GroupAdressData> before = app.getContactHelper().getContactList();
         app.getContactHelper().goToNewAddressPage();
@@ -22,7 +22,7 @@ public class CreationAddress extends TestBase {
         GroupAdressData contact = new GroupAdressData(before.get(0).getId(),"test_last_name", "test_first_name" , "test_address", "test_email", "test_mobile", "Test1");
         app.getContactHelper().fillAddressForm(contact, true);
         app.getContactHelper().submitAddress();
-        app.getNavigationHelper().goToHomePage();
+        app.goTo().goToHomePage();
 
         List<GroupAdressData> after = app.getContactHelper().getContactList();
         Assert.assertEquals(after.size(), before.size()+1);

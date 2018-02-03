@@ -9,7 +9,7 @@ public class NavigationHelper extends BaseHelper {
         super(wd);
     }
 
-    public void goToGroupPage() {
+    public void groupPage() {
 
 
     if (isElementPresent(new By.ByTagName("H1"))
