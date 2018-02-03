@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import ru.stqa.pft.addressbook.models.Contacts;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends BaseHelper {
 
@@ -51,6 +53,8 @@ public class ContactHelper extends BaseHelper {
         click(By.name("submit"));
     }
 
+    private Contacts contactCache = null;
+
     public void delete(GroupAdressData contact) {
         selectAddressById(contact.getId());
         clickToDeleteAddress();
@@ -92,28 +96,24 @@ public class ContactHelper extends BaseHelper {
         contactCache = null;
     }
 
-    private Contacts contactCache = null;
 
-    public Contacts all() {
-        if (contactCache != null) {
-            return new Contacts(contactCache);
-        }
-        contactCache = new Contacts();
-        List<WebElement> elements = wd.findElements(By.name("entry"));
-        for (WebElement element : elements) {
-            List<WebElement> cells = element.findElements(By.tagName("td"));
-            String lastName = cells.get(1).getText();
-            String firstName = cells.get(2).getText();
-            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            contactCache.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firstName));
-        }
 
-        return new Contacts(contactCache);
+public Set<GroupAdressData> all() {
+    Set<GroupAdressData> contacts = new HashSet<>();
+    List<WebElement> rows = wd.findElements(By.name("entry"));
+    for (WebElement row : rows) {
+        List<WebElement> cells = row.findElements(By.tagName("td"));
+        int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
+        String firtsName = cells.get(2).getText();
+        String lastName = cells.get(1).getText();
+        String allPhones = cells.get(5).getText();
+
+        contacts.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firtsName)
+                .withAllPhones(allPhones));
     }
+    return contacts;
+}
 
-    public int count() {
-        return wd.findElements(By.name("selected[]")).size();
-    }
 
     public GroupAdressData infoFromEditForm(GroupAdressData contact) {
            initContactModificationById(contact.getId());
@@ -133,4 +133,9 @@ public class ContactHelper extends BaseHelper {
            List<WebElement> cells = row.findElements(By.tagName("td"));
            cells.get(7).findElement(By.tagName("a")).click();
           }
+
+    public int count() {
+        return wd.findElements(By.name("selected[]")).size();
+    }
+
 }

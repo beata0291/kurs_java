@@ -13,11 +13,6 @@ public class Contacts extends ForwardingSet<GroupAdressData> {
             this.delegate = new HashSet<GroupAdressData>(contacts.delegate);
           }
 
-           public Contacts() {
-            this.delegate = new HashSet<GroupAdressData>();
-
-                  }
-
 
            @Override
    protected Set<GroupAdressData> delegate() {

@@ -23,7 +23,7 @@ public class EditAddress extends TestBase {
     @Test
     public void testEditAddress() {
 
-        Contacts before = app.contact().all();
+        Contacts before = (Contacts) app.contact().all();
         GroupAdressData modifiedContact = before.iterator().next();
 
         GroupAdressData contact = new GroupAdressData()
@@ -32,7 +32,7 @@ public class EditAddress extends TestBase {
             app.goTo().homePage();
         assertThat(app.contact().count(),  equalTo(before.size()));
 
-        Contacts after = app.contact().all();
+        Contacts after = (Contacts) app.contact().all();
 
         assertThat(after, equalTo(before.without(modifiedContact).withAdded(contact)));
 

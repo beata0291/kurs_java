@@ -12,7 +12,21 @@ public class GroupAdressData {
     private  String group;
     private String homePhone;
    private String workPhone;
+    public String allPhones;
 
+    public GroupAdressData withAllPhones(String allPhones) {
+        this.allPhones = allPhones;
+        return this;
+    }
+
+    public String getGroup() {
+
+        return group;
+    }
+
+    public String getAllPhones() {
+        return allPhones;
+    }
 
     public int getId() {
         return id;
@@ -58,8 +72,11 @@ public class GroupAdressData {
         return mobile;
     }
 
-    public String getGroup() {
-        return group;
+    public String getWorkPhone() {
+        return workPhone;
+    }
+    public String getHomePhone() {
+        return homePhone;
     }
 
 
@@ -108,12 +125,12 @@ public class GroupAdressData {
         return this;
     }
 
-    public GroupAdressData withHomePhone(String home) {
+    public GroupAdressData withHomePhone(String homePhone) {
         this.homePhone = homePhone;
         return this;
     }
 
-    public GroupAdressData withWorkPhone(String work) {
+    public GroupAdressData withWorkPhone(String workPhone) {
         this.workPhone = workPhone;
         return this;
     }
