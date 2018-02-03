@@ -20,7 +20,7 @@ public class NavigationHelper extends BaseHelper {
         click(By.linkText("groups"));
 }
     //przenieść do NavigationTest - funkcja if sprawcza czy na stronie znajduje się tabela//
-    public void goToHomePage() {
+    public void homePage() {
     if (isElementPresent(By.id("maintable"))){
             return;}
         click(By.linkText("home"));

@@ -13,10 +13,10 @@ public class EditAddress extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondicions() {
-        app.goTo().goToHomePage();
+        app.goTo().homePage();
         if (app.contact().all().size() == 0) {
             app.goTo().contactPage();
-            app.contact().createContact(new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1"));
+            app.contact().create(new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1"));
         }
     }
 
@@ -29,7 +29,7 @@ public class EditAddress extends TestBase {
         GroupAdressData contact = new GroupAdressData()
                 .withId(modifiedContact.getId()).withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1");
         app.contact().modify(contact);
-            app.goTo().goToHomePage();
+            app.goTo().homePage();
         assertThat(app.contact().count(),  equalTo(before.size()));
 
         Contacts after = app.contact().all();

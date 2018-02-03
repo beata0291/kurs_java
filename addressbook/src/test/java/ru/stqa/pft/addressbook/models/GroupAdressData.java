@@ -10,6 +10,8 @@ public class GroupAdressData {
     private  String email;
     private  String mobile;
     private  String group;
+    private String homePhone;
+   private String workPhone;
 
 
     public int getId() {
@@ -103,6 +105,16 @@ public class GroupAdressData {
 
     public GroupAdressData withGroup(String group) {
         this.group = group;
+        return this;
+    }
+
+    public GroupAdressData withHomePhone(String home) {
+        this.homePhone = homePhone;
+        return this;
+    }
+
+    public GroupAdressData withWorkPhone(String work) {
+        this.workPhone = workPhone;
         return this;
     }
 }

@@ -13,12 +13,12 @@ public class CreationAddress extends TestBase {
 
     @Test
     public void CreationAddress() {
-        app.goTo().goToHomePage();
+        app.goTo().homePage();
 
         Contacts before = app.contact().all();
         GroupAdressData contact = new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1");
-        app.contact().createContact(contact);
-        app.goTo().goToHomePage();
+        app.contact().create(contact);
+        app.goTo().homePage();
         assertThat(app.contact().count(),  equalTo(before.size() + 1));
 
         Contacts after = app.contact().all();
