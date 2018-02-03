@@ -3,8 +3,7 @@ package ru.stqa.pft.addressbook.helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
+import ru.stqa.pft.addressbook.models.Contacts;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
 
 import java.util.ArrayList;
@@ -44,28 +43,36 @@ public class ContactHelper extends BaseHelper {
         wd.switchTo().alert().accept();
     }
 
-    public void selectAddress(int id) {
-        click(By.name("selected[]"));
+
+    public void selectAddressById(int id) {
+        wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
     }
 
     public void submitAddress() {
         click(By.name("submit"));
     }
 
-    public void fillAddressForm(GroupAdressData groupAdressData, boolean Creation) {
+    public void delete(GroupAdressData contact) {
+        selectAddressById(contact.getId());
+        clickToDeleteAddress();
+        acceptToDeleteAddress();
+
+    }
+
+    public void fillAddressForm(GroupAdressData groupAdressData) {
         type(By.name("lastname"), groupAdressData.getLastName());
         type(By.name("firstname"), groupAdressData.getFirstName());
         type(By.name("address"), groupAdressData.getAddress());
         type(By.name("email"), groupAdressData.getEmail());
         type(By.name("mobile"), groupAdressData.getMobile());
 
-
+/*
         if (Creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(groupAdressData.getGroup());
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
-
+*/
     }
 
     public boolean isThereAContact() {
@@ -73,21 +80,44 @@ public class ContactHelper extends BaseHelper {
     }
 
     public void createContact(GroupAdressData contact) {
+        goToNewAddressPage();
         initAddressCreation();
-        fillAddressForm(contact, true);
+        fillAddressForm(contact);
         submitAddress();
     }
+
+
+    public void modify(GroupAdressData contact) {
+        selectAddressById(contact.getId());
+        clickToEditAddress();
+        fillAddressForm(contact);
+        clickToUpdateAddress();
+    }
+
 
     public List<GroupAdressData> getContactList() {
         List<GroupAdressData> contacts = new ArrayList<GroupAdressData>();
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements) {
             List<WebElement> cells = element.findElements(By.tagName("td"));
+            String lastName = cells.get(2).getText();
+            String firstName = cells.get(3).getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            String firstName = cells.get(2).getText();
-            String lastName = cells.get(3).getText();
-            GroupAdressData contact = new GroupAdressData(id,lastName, firstName, null, null, null, null);
-            contacts.add(contact);
+            contacts.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firstName));
+        }
+
+        return contacts;
+    }
+
+    public Contacts all() {
+        Contacts contacts = new Contacts();
+        List<WebElement> elements = wd.findElements(By.name("entry"));
+        for (WebElement element : elements) {
+            List<WebElement> cells = element.findElements(By.tagName("td"));
+            String lastName = cells.get(2).getText();
+            String firstName = cells.get(3).getText();
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+            contacts.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firstName));
         }
 
         return contacts;

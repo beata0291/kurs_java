@@ -3,7 +3,7 @@ package ru.stqa.pft.addressbook.models;
 public class GroupAdressData {
 
 
-    private int id;
+    private int id = Integer.MAX_VALUE;
     private  String lastName;
     private  String firstName;
     private  String address;
@@ -16,25 +16,24 @@ public class GroupAdressData {
         return id;
     }
 
-    public GroupAdressData(int id,  String lastName,String firstName, String address, String email, String mobile, String group) {
-        this.id = id;
-        this.lastName = lastName;
-        this.firstName = firstName;
-        this.address = address;
-        this.email = email;
-        this.mobile = mobile;
-        this.group = group;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        GroupAdressData that = (GroupAdressData) o;
+
+        if (id != that.id) return false;
+        if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
+        return firstName != null ? firstName.equals(that.firstName) : that.firstName == null;
     }
 
-
-    public GroupAdressData(String lastName,String firstName, String address, String email, String mobile, String group) {
-        this.id = 0;
-        this.lastName = lastName;
-        this.firstName = firstName;
-        this.address = address;
-        this.email = email;
-        this.mobile = mobile;
-        this.group = group;
+    @Override
+    public int hashCode() {
+        int result = id;
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+        return result;
     }
 
     public String getLastName() {
@@ -60,40 +59,50 @@ public class GroupAdressData {
     public String getGroup() {
         return group;
     }
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        GroupAdressData that = (GroupAdressData) o;
-
-        if (id != that.id) return false;
-        if (lastName != null ? lastName.equals(that.lastName) : that.lastName == null) return false;
-        return firstName != null ? !firstName.equals(that.firstName) : that.firstName != null;
 
 
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
-        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
-
-
-        return result;
-    }
     @Override
     public String toString() {
         return "GroupAdressData{" +
                 "id='" + id + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", firstName='" + firstName + '\'' +
+
                 '}';
     }
 
-    public void setId(int id) {
+    public GroupAdressData withId(int id) {
         this.id = id;
+        return this;
+    }
+
+    public GroupAdressData withLastName(String lastName) {
+        this.lastName = lastName;
+        return this;
+    }
+
+    public GroupAdressData withFirstName(String firstName) {
+        this.firstName = firstName;
+        return this;
+    }
+
+    public GroupAdressData withAddress(String address) {
+        this.address = address;
+        return this;
+    }
+
+    public GroupAdressData withEmail(String email) {
+        this.email = email;
+        return this;
+    }
+
+    public GroupAdressData withMobile(String mobile) {
+        this.mobile = mobile;
+        return this;
+    }
+
+    public GroupAdressData withGroup(String group) {
+        this.group = group;
+        return this;
     }
 }

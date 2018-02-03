@@ -1,35 +1,41 @@
 package ru.stqa.pft.addressbook.tests.Address;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import ru.stqa.pft.addressbook.models.Contacts;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
 import ru.stqa.pft.addressbook.tests.TestBase;
 
-import java.util.List;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class DeletionAddress extends TestBase{
 
+    @BeforeMethod
+    public void ensurePrecondicions() {
+        app.goTo().goToHomePage();
+        if (!app.Contact().isThereAContact()) {
+            app.Contact().createContact(new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1"));
+        }
+    }
 
     @Test
     public void testDeletionAddress() {
+
+        Contacts before = app.Contact().all();
+        GroupAdressData deletedGroup = before.iterator().next();
+        app.Contact().delete(deletedGroup);
         app.goTo().goToHomePage();
-        if (!app.getContactHelper().isThereAContact()) {
-            app.getContactHelper().createContact(new GroupAdressData("test_last_name", "test_first_name", "test_address", "test_email", "test_mobile", "Test1"));
-        }
-        List<GroupAdressData> before = app.getContactHelper().getContactList();
-           app.getContactHelper().selectAddress(before.size() - 1);
 
-            app.getContactHelper().clickToDeleteAddress();
-            app.getContactHelper().acceptToDeleteAddress();
-            app.goTo().goToHomePage();
-
-        List<GroupAdressData> after = app.getContactHelper().getContactList();
+        Contacts after = app.Contact().all();
             Assert.assertEquals(after.size(), before.size() - 1);
 
-        before.remove(before.size() -1);
-            Assert.assertEquals(before, after);
+        assertThat(after, equalTo(before.without(deletedGroup)));
 
         }
 
-    }
+
+
+}
 

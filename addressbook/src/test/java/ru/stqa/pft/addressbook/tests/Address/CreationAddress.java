@@ -2,12 +2,12 @@ package ru.stqa.pft.addressbook.tests.Address;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import ru.stqa.pft.addressbook.models.Contacts;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
 import ru.stqa.pft.addressbook.tests.TestBase;
 
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.List;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class CreationAddress extends TestBase {
 
@@ -16,21 +16,20 @@ public class CreationAddress extends TestBase {
     public void CreationAddress() {
         app.goTo().goToHomePage();
 
-        List<GroupAdressData> before = app.getContactHelper().getContactList();
-        app.getContactHelper().goToNewAddressPage();
-        app.getContactHelper().initAddressCreation();
-        GroupAdressData contact = new GroupAdressData(before.get(0).getId(),"test_last_name", "test_first_name" , "test_address", "test_email", "test_mobile", "Test1");
-        app.getContactHelper().fillAddressForm(contact, true);
-        app.getContactHelper().submitAddress();
+        Contacts before = app.Contact().all();
+        GroupAdressData contact = new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1");
+        app.Contact().createContact(contact);
         app.goTo().goToHomePage();
 
-        List<GroupAdressData> after = app.getContactHelper().getContactList();
-        Assert.assertEquals(after.size(), before.size()+1);
+
+        Contacts after = app.Contact().all();
+        Assert.assertEquals(after.size(), before.size() + 1);
 
 
-        contact.setId(after.stream().max(Comparator.comparingInt(GroupAdressData::getId)).get().getId());
-            before.add(contact);
-           Assert.assertEquals(new HashSet<Object>(before), new HashSet<Object>(after));
+        assertThat(after, equalTo(
+                before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
     }
 
 }
+
+
