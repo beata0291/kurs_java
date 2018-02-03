@@ -28,7 +28,7 @@ public class DeletionAddress extends TestBase{
 
         before.remove(before.size() -1);
             Assert.assertEquals(before, after);
-            
+
         }
 
     }

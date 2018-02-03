@@ -19,7 +19,7 @@ public class CreationAddress extends TestBase {
         List<GroupAdressData> before = app.getContactHelper().getContactList();
         app.getContactHelper().goToNewAddressPage();
         app.getContactHelper().initAddressCreation();
-        GroupAdressData contact = new GroupAdressData(before.get(0).getId(),"test_last_name","test_first_name" , "test_address", "test_email", "test_mobile", "Test1");
+        GroupAdressData contact = new GroupAdressData(before.get(0).getId(),"test_last_name", "test_first_name" , "test_address", "test_email", "test_mobile", "Test1");
         app.getContactHelper().fillAddressForm(contact, true);
         app.getContactHelper().submitAddress();
         app.getNavigationHelper().goToHomePage();

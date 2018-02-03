@@ -53,8 +53,8 @@ public class ContactHelper extends BaseHelper {
     }
 
     public void fillAddressForm(GroupAdressData groupAdressData, boolean Creation) {
-        type(By.name("firstname"), groupAdressData.getFirstName());
         type(By.name("lastname"), groupAdressData.getLastName());
+        type(By.name("firstname"), groupAdressData.getFirstName());
         type(By.name("address"), groupAdressData.getAddress());
         type(By.name("email"), groupAdressData.getEmail());
         type(By.name("mobile"), groupAdressData.getMobile());
@@ -83,10 +83,10 @@ public class ContactHelper extends BaseHelper {
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements) {
             List<WebElement> cells = element.findElements(By.tagName("td"));
-            String firtsName = cells.get(1).getText();
-            String lastName = cells.get(2).getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            GroupAdressData contact = new GroupAdressData(id, firtsName,lastName, null, null, null, null);
+            String firstName = cells.get(2).getText();
+            String lastName = cells.get(3).getText();
+            GroupAdressData contact = new GroupAdressData(id,lastName, firstName, null, null, null, null);
             contacts.add(contact);
         }
 

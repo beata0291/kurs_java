@@ -16,7 +16,7 @@ public class GroupAdressData {
         return id;
     }
 
-    public GroupAdressData(int id, String lastName, String firstName, String address, String email, String mobile, String group) {
+    public GroupAdressData(int id,  String lastName,String firstName, String address, String email, String mobile, String group) {
         this.id = id;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -71,6 +71,8 @@ public class GroupAdressData {
         if (lastName != null ? lastName.equals(that.lastName) : that.lastName == null) return false;
         return firstName != null ? !firstName.equals(that.firstName) : that.firstName != null;
 
+
+
     }
 
     @Override
@@ -78,6 +80,7 @@ public class GroupAdressData {
         int result = id;
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+
 
         return result;
     }
