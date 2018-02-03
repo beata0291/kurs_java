@@ -15,7 +15,8 @@ public class DeletionAddress extends TestBase{
     @BeforeMethod
     public void ensurePrecondicions() {
         app.goTo().goToHomePage();
-        if (!app.Contact().isThereAContact()) {
+        if (app.Contact().all().size() == 0) {
+            app.goTo().contactPage();
             app.Contact().createContact(new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1"));
         }
     }

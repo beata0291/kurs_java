@@ -25,4 +25,9 @@ public class NavigationHelper extends BaseHelper {
             return;}
         click(By.linkText("home"));
     }
+
+    public void contactPage() {
+        click(By.linkText("add new"));
+
+    }
 }

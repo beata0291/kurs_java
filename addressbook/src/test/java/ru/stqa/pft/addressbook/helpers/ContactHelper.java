@@ -56,6 +56,7 @@ public class ContactHelper extends BaseHelper {
         selectAddressById(contact.getId());
         clickToDeleteAddress();
         acceptToDeleteAddress();
+        contactCache = null;
 
     }
 
@@ -75,15 +76,12 @@ public class ContactHelper extends BaseHelper {
 */
     }
 
-    public boolean isThereAContact() {
-        return isElementPresent(By.name("selected[]"));
-    }
-
     public void createContact(GroupAdressData contact) {
         goToNewAddressPage();
         initAddressCreation();
         fillAddressForm(contact);
         submitAddress();
+        contactCache = null;
     }
 
 
@@ -92,6 +90,7 @@ public class ContactHelper extends BaseHelper {
         clickToEditAddress();
         fillAddressForm(contact);
         clickToUpdateAddress();
+        contactCache = null;
     }
 
 
@@ -108,18 +107,22 @@ public class ContactHelper extends BaseHelper {
 
         return contacts;
     }
+    private Contacts contactCache = null;
 
     public Contacts all() {
-        Contacts contacts = new Contacts();
+        if (contactCache != null) {
+            return new Contacts(contactCache);
+        }
+        contactCache = new Contacts();
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements) {
             List<WebElement> cells = element.findElements(By.tagName("td"));
             String lastName = cells.get(2).getText();
             String firstName = cells.get(3).getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            contacts.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firstName));
+            contactCache.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firstName));
         }
 
-        return contacts;
+        return new Contacts(contactCache);
     }
 }
