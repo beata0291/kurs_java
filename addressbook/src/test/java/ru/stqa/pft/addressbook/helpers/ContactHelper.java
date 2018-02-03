@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import ru.stqa.pft.addressbook.models.Contacts;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ContactHelper extends BaseHelper {
@@ -93,20 +92,6 @@ public class ContactHelper extends BaseHelper {
         contactCache = null;
     }
 
-
-    public List<GroupAdressData> getContactList() {
-        List<GroupAdressData> contacts = new ArrayList<GroupAdressData>();
-        List<WebElement> elements = wd.findElements(By.name("entry"));
-        for (WebElement element : elements) {
-            List<WebElement> cells = element.findElements(By.tagName("td"));
-            String lastName = cells.get(2).getText();
-            String firstName = cells.get(3).getText();
-            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            contacts.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firstName));
-        }
-
-        return contacts;
-    }
     private Contacts contactCache = null;
 
     public Contacts all() {
@@ -117,8 +102,8 @@ public class ContactHelper extends BaseHelper {
         List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements) {
             List<WebElement> cells = element.findElements(By.tagName("td"));
-            String lastName = cells.get(2).getText();
-            String firstName = cells.get(3).getText();
+            String lastName = cells.get(1).getText();
+            String firstName = cells.get(2).getText();
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
             contactCache.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firstName));
         }
