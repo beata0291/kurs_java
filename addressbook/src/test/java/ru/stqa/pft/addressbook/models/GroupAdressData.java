@@ -4,15 +4,16 @@ public class GroupAdressData {
 
 
     private int id = Integer.MAX_VALUE;
-    private  String lastName;
-    private  String firstName;
-    private  String address;
-    private  String email;
-    private  String mobile;
-    private  String group;
+    private String lastName;
+    private String firstName;
+    private String address;
+    private String email;
+    private String mobile;
+    private String group;
     private String homePhone;
-   private String workPhone;
+    private String workPhone;
     public String allPhones;
+    private String addressResidence;
 
     public GroupAdressData withAllPhones(String allPhones) {
         this.allPhones = allPhones;
@@ -27,6 +28,7 @@ public class GroupAdressData {
     public String getAllPhones() {
         return allPhones;
     }
+
 
     public int getId() {
         return id;
@@ -60,8 +62,8 @@ public class GroupAdressData {
         return firstName;
     }
 
-    public String getAddress() {
-        return address;
+    public String getAddressResidence() {
+        return addressResidence;
     }
 
     public String getEmail() {
@@ -75,6 +77,7 @@ public class GroupAdressData {
     public String getWorkPhone() {
         return workPhone;
     }
+
     public String getHomePhone() {
         return homePhone;
     }
@@ -105,8 +108,8 @@ public class GroupAdressData {
         return this;
     }
 
-    public GroupAdressData withAddress(String address) {
-        this.address = address;
+    public GroupAdressData withAddressResidence(String addressResidence) {
+        this.addressResidence = addressResidence;
         return this;
     }
 
@@ -134,4 +137,6 @@ public class GroupAdressData {
         this.workPhone = workPhone;
         return this;
     }
+
+
 }

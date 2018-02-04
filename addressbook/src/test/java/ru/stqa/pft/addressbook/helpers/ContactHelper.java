@@ -66,7 +66,7 @@ public class ContactHelper extends BaseHelper {
     public void fillAddressForm(GroupAdressData groupAdressData) {
         type(By.name("lastname"), groupAdressData.getLastName());
         type(By.name("firstname"), groupAdressData.getFirstName());
-        type(By.name("address"), groupAdressData.getAddress());
+        type(By.name("address"), groupAdressData.getAddressResidence());
         type(By.name("email"), groupAdressData.getEmail());
         type(By.name("mobile"), groupAdressData.getMobile());
 
@@ -107,9 +107,10 @@ public Set<GroupAdressData> all() {
         String firtsName = cells.get(2).getText();
         String lastName = cells.get(1).getText();
         String allPhones = cells.get(5).getText();
+        String address = cells.get(3).getText();
 
         contacts.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firtsName)
-                .withAllPhones(allPhones));
+                .withAllPhones(allPhones).withAddressResidence(address));
     }
     return contacts;
 }
@@ -122,9 +123,10 @@ public Set<GroupAdressData> all() {
            String home = wd.findElement(By.name("home")).getAttribute("value");
            String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
            String work = wd.findElement(By.name("work")).getAttribute("value");
+        String address = wd.findElement(By.name("address")).getAttribute("value");
            wd.navigate().back();
            return new GroupAdressData().withId(contact.getId()).withLastName(lastName).withFirstName(firtsName)
-                           .withHomePhone(home).withMobile(mobile).withWorkPhone(work);
+                   .withHomePhone(home).withMobile(mobile).withWorkPhone(work).withAddressResidence(address);
           }
 
            private void initContactModificationById(int id) {

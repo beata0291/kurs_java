@@ -1,4 +1,4 @@
-package ru.stqa.pft.addressbook.tests.Address;
+package ru.stqa.pft.addressbook.tests.Contact;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -9,7 +9,7 @@ import ru.stqa.pft.addressbook.tests.TestBase;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class EditAddress extends TestBase {
+public class DeletionContact extends TestBase{
 
     @BeforeMethod
     public void ensurePrecondicions() {
@@ -20,23 +20,23 @@ public class EditAddress extends TestBase {
         }
     }
 
+
     @Test
-    public void testEditAddress() {
+    public void testDeletionContact() {
 
         Contacts before = (Contacts) app.contact().all();
-        GroupAdressData modifiedContact = before.iterator().next();
-
-        GroupAdressData contact = new GroupAdressData()
-                .withId(modifiedContact.getId()).withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1");
-        app.contact().modify(contact);
-            app.goTo().homePage();
-        assertThat(app.contact().count(),  equalTo(before.size()));
+        GroupAdressData deletedGroup = before.iterator().next();
+        app.contact().delete(deletedGroup);
+        app.goTo().homePage();
+        assertThat(app.contact().count(),  equalTo(before.size() - 1));
 
         Contacts after = (Contacts) app.contact().all();
 
-        assertThat(after, equalTo(before.without(modifiedContact).withAdded(contact)));
+        assertThat(after, equalTo(before.without(deletedGroup)));
 
         }
+
+
 
 }
 

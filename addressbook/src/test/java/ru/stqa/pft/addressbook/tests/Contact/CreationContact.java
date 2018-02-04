@@ -1,4 +1,4 @@
-package ru.stqa.pft.addressbook.tests.Address;
+package ru.stqa.pft.addressbook.tests.Contact;
 
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.models.Contacts;
@@ -8,11 +8,11 @@ import ru.stqa.pft.addressbook.tests.TestBase;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class CreationAddress extends TestBase {
+public class CreationContact extends TestBase {
 
 
     @Test
-    public void CreationAddress() {
+    public void testCreationContact() {
         app.goTo().homePage();
 
         Contacts before = (Contacts) app.contact().all();

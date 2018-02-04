@@ -1,4 +1,4 @@
-package ru.stqa.pft.addressbook.tests.Phones;
+package ru.stqa.pft.addressbook.tests.ComponentContact;
 
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
