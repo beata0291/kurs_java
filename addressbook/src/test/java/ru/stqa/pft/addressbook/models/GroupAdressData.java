@@ -1,5 +1,7 @@
 package ru.stqa.pft.addressbook.models;
 
+import java.io.File;
+
 public class GroupAdressData {
 
 
@@ -33,8 +35,16 @@ public class GroupAdressData {
     private String anniversaryYear;
     private String secondaryAddress;
     private String secondaryHomePhone;
+    public File photo;
 
+    public  File getPhoto() {
+        return photo;
+    }
 
+    public GroupAdressData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
 
     public String getBirthdayMonth() {
         return birthdayMonth;

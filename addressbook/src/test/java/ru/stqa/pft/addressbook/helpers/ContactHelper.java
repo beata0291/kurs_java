@@ -69,7 +69,8 @@ public class ContactHelper extends BaseHelper {
         type(By.name("address"), groupAdressData.getAddressResidence());
         type(By.name("email"), groupAdressData.getEmail());
         type(By.name("mobile"), groupAdressData.getMobile());
-
+        attach(By.name("photo"), groupAdressData.getPhoto());
+    }
 /*
         if (Creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(groupAdressData.getGroup());
@@ -77,7 +78,8 @@ public class ContactHelper extends BaseHelper {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
 */
-    }
+
+
 
     public void create(GroupAdressData contact) {
         goToNewAddressPage();
@@ -97,8 +99,9 @@ public class ContactHelper extends BaseHelper {
     }
 
 
-    public Set<GroupAdressData> all() {
-        Set<GroupAdressData> contacts = new HashSet<>();
+
+      public  Set<GroupAdressData> all(){
+        Set <GroupAdressData> contacts = new HashSet<>();
         List<WebElement> rows = wd.findElements(By.name("entry"));
         for (WebElement row : rows) {
             List<WebElement> cells = row.findElements(By.tagName("td"));
