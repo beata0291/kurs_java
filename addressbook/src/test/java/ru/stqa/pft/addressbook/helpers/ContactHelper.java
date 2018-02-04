@@ -108,9 +108,10 @@ public Set<GroupAdressData> all() {
         String lastName = cells.get(1).getText();
         String allPhones = cells.get(5).getText();
         String address = cells.get(3).getText();
+        String emails = cells.get(4).getText();
 
         contacts.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firtsName)
-                .withAllPhones(allPhones).withAddressResidence(address));
+                .withAllPhones(allPhones).withAddressResidence(address).withAllEmails(emails));
     }
     return contacts;
 }
@@ -124,9 +125,13 @@ public Set<GroupAdressData> all() {
            String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
            String work = wd.findElement(By.name("work")).getAttribute("value");
         String address = wd.findElement(By.name("address")).getAttribute("value");
+        String email = wd.findElement(By.name("email")).getAttribute("value");
+           String email2 = wd.findElement(By.name("email2")).getAttribute("value");
+           String email3 = wd.findElement(By.name("email3")).getAttribute("value");
            wd.navigate().back();
            return new GroupAdressData().withId(contact.getId()).withLastName(lastName).withFirstName(firtsName)
-                   .withHomePhone(home).withMobile(mobile).withWorkPhone(work).withAddressResidence(address);
+                   .withHomePhone(home).withMobile(mobile).withWorkPhone(work).withAddressResidence(address).withEmail(email)
+                   .withEmail2(email2).withEmail3(email3);
           }
 
            private void initContactModificationById(int id) {
