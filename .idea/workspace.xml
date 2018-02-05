@@ -71,93 +71,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="GroupAdressData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/GroupAdressData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-              <folding>
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1250#1251#0" expanded="true" />
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1466#1467#0" expanded="true" />
-                <element signature="e#1501#1502#0" expanded="true" />
-                <element signature="e#1676#1677#0" expanded="true" />
-                <element signature="e#1710#1711#0" expanded="true" />
-                <element signature="e#1884#1885#0" expanded="true" />
-                <element signature="e#1921#1922#0" expanded="true" />
-                <element signature="e#2109#2110#0" expanded="true" />
-                <element signature="e#2148#2149#0" expanded="true" />
-                <element signature="e#2343#2344#0" expanded="true" />
-                <element signature="e#2381#2382#0" expanded="true" />
-                <element signature="e#2573#2574#0" expanded="true" />
-                <element signature="e#2612#2613#0" expanded="true" />
-                <element signature="e#2810#2811#0" expanded="true" />
-                <element signature="e#2851#2852#0" expanded="true" />
-                <element signature="e#3044#3045#0" expanded="true" />
-                <element signature="e#3072#3073#0" expanded="true" />
-                <element signature="e#3219#3220#0" expanded="true" />
-                <element signature="e#3252#3253#0" expanded="true" />
-                <element signature="e#3416#3417#0" expanded="true" />
-                <element signature="e#3447#3448#0" expanded="true" />
-                <element signature="e#3600#3601#0" expanded="true" />
-                <element signature="e#3628#3629#0" expanded="true" />
-                <element signature="e#3767#3768#0" expanded="true" />
-                <element signature="e#3793#3794#0" expanded="true" />
-                <element signature="e#3928#3929#0" expanded="true" />
-                <element signature="e#3958#3959#0" expanded="true" />
-                <element signature="e#4110#4111#0" expanded="true" />
-                <element signature="e#4141#4142#0" expanded="true" />
-                <element signature="e#4297#4298#0" expanded="true" />
-                <element signature="e#4328#4329#0" expanded="true" />
-                <element signature="e#4487#4488#0" expanded="true" />
-                <element signature="e#4521#4522#0" expanded="true" />
-                <element signature="e#4714#4715#0" expanded="true" />
-                <element signature="e#4743#4744#0" expanded="true" />
-                <element signature="e#4776#4777#0" expanded="true" />
-                <element signature="e#4805#4806#0" expanded="true" />
-                <element signature="e#4841#4842#0" expanded="true" />
-                <element signature="e#4873#4874#0" expanded="true" />
-                <element signature="e#5095#5096#0" expanded="true" />
-                <element signature="e#5127#5128#0" expanded="true" />
-                <element signature="e#5154#5155#0" expanded="true" />
-                <element signature="e#5179#5180#0" expanded="true" />
-                <element signature="e#5920#5921#0" expanded="true" />
-                <element signature="e#5951#5952#0" expanded="true" />
-                <element signature="e#5987#5988#0" expanded="true" />
-                <element signature="e#6019#6020#0" expanded="true" />
-                <element signature="e#6062#6063#0" expanded="true" />
-                <element signature="e#6101#6102#0" expanded="true" />
-                <element signature="e#6133#6134#0" expanded="true" />
-                <element signature="e#6161#6162#0" expanded="true" />
-                <element signature="e#6194#6195#0" expanded="true" />
-                <element signature="e#6223#6224#0" expanded="true" />
-                <element signature="e#6259#6260#0" expanded="true" />
-                <element signature="e#6291#6292#0" expanded="true" />
-                <element signature="e#6327#6328#0" expanded="true" />
-                <element signature="e#6359#6360#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="183">
+              <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+              <folding>
+                <element signature="e#1552#1553#0" expanded="true" />
+                <element signature="e#1587#1588#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,8 +87,8 @@
       <file leaf-file-name="BaseHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/BaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="319">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="e#814#815#0" expanded="true" />
                 <element signature="e#861#862#0" expanded="true" />
@@ -175,14 +97,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ContactDetailsTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/ComponentContact/ContactDetailsTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Contacts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/Contacts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="205">
+              <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
                 <element signature="e#382#383#0" expanded="true" />
                 <element signature="e#452#453#0" expanded="true" />
                 <element signature="e#492#493#0" expanded="true" />
@@ -194,48 +125,69 @@
       <file leaf-file-name="GroupsHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/GroupsHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1659">
-              <caret line="104" column="11" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="105" selection-end-column="5" />
+            <state relative-caret-position="183">
+              <caret line="86" column="30" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupDataGenerator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java">
+      <file leaf-file-name="CreationContact.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Contact/CreationContact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-101">
-              <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+            <state relative-caret-position="120">
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/ContactHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#6823#6824#0" expanded="true" />
+                <element signature="e#6891#6892#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gift.jpeg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook/src/test/resources/gift.jpeg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook/build.gradle">
+      <file leaf-file-name="AddressTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/ComponentContact/AddressTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="252">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreationGroupTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CreationGroupTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="298">
+              <caret line="41" column="108" lean-forward="false" selection-start-line="41" selection-start-column="108" selection-end-line="41" selection-end-column="108" />
+              <folding>
+                <element signature="e#627#637#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Groups.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/Groups.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+              <folding>
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1450,7 +1402,6 @@
         <option value="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/mantis-tests/src/test/resources/config_inc.php" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/GroupData.java" />
-        <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/GroupsHelper.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/DeletionGroupTest.java" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/GroupModificationTests.java" />
@@ -1474,6 +1425,7 @@
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Contact/CreationContact.java" />
         <option value="$PROJECT_DIR$/addressbook/build.gradle" />
         <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" />
+        <option value="$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java" />
       </list>
     </option>
   </component>
@@ -1693,7 +1645,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GroupDataGenerator">
+  <component name="RunManager" selected="TestNG.CreationGroupTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1954,12 +1906,13 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.GroupDataGenerator" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.AddressTest" />
       <item index="2" class="java.lang.String" itemvalue="TestNG.ContactDetailsTests" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.CreationContact" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.CreationGroupTest" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.PrimesTest.testPrime" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.CreationContact" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.CreationGroupTest" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -1985,9 +1938,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactDetailsTests - 2018.02.04 at 11h 02m 55s.xml">
-      <configuration name="ContactDetailsTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ContactDetailsTests - 2018.02.04 at 11h 03m 44s.xml">
       <configuration name="ContactDetailsTests" configurationId="TestNG" />
     </history-entry>
@@ -2015,9 +1965,13 @@
     <history-entry file="CreationGroupTest - 2018.02.05 at 20h 46m 14s.xml">
       <configuration name="CreationGroupTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="CreationGroupTest - 2018.02.05 at 22h 01m 10s.xml">
+      <configuration name="CreationGroupTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2028,7 +1982,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30735457" sideWeight="0.5125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.51197916" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.51197916" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2042,12 +1996,34 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30735457" sideWeight="0.5125" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30625686" sideWeight="0.4875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.49166667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.146875" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.51197916" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2390625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23697917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2297,13 +2273,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/ComponentContact/ContactEmailTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
+        <state relative-caret-position="537">
           <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1506#1507#0" expanded="false" />
-            <element signature="e#1580#1581#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2363,15 +2335,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
           <caret line="34" column="5" lean-forward="false" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/Groups.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="235">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2398,8 +2374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/BaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="319">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding>
             <element signature="e#814#815#0" expanded="true" />
             <element signature="e#861#862#0" expanded="true" />
@@ -2407,23 +2383,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/ComponentContact/ContactDetailsTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/models/Contacts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="205">
+          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
             <element signature="e#382#383#0" expanded="true" />
             <element signature="e#452#453#0" expanded="true" />
             <element signature="e#492#493#0" expanded="true" />
@@ -2433,40 +2398,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/ContactHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="103" column="57" lean-forward="false" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="57" />
-          <folding>
-            <element signature="e#566#567#0" expanded="false" />
-            <element signature="e#611#612#0" expanded="false" />
-            <element signature="e#733#734#0" expanded="false" />
-            <element signature="e#816#817#0" expanded="false" />
-            <element signature="e#1070#1071#0" expanded="false" />
-            <element signature="e#1153#1154#0" expanded="false" />
-            <element signature="e#6823#6824#0" expanded="false" />
-            <element signature="e#6891#6892#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Contact/CreationContact.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#6823#6824#0" expanded="true" />
+            <element signature="e#6891#6892#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/ComponentContact/AddressTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="252">
           <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1177#1178#0" expanded="false" />
-            <element signature="e#1238#1239#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2474,75 +2419,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="777">
           <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-          <folding>
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1501#1502#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
-            <element signature="e#1921#1922#0" expanded="true" />
-            <element signature="e#2109#2110#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
-            <element signature="e#2343#2344#0" expanded="true" />
-            <element signature="e#2381#2382#0" expanded="true" />
-            <element signature="e#2573#2574#0" expanded="true" />
-            <element signature="e#2612#2613#0" expanded="true" />
-            <element signature="e#2810#2811#0" expanded="true" />
-            <element signature="e#2851#2852#0" expanded="true" />
-            <element signature="e#3044#3045#0" expanded="true" />
-            <element signature="e#3072#3073#0" expanded="true" />
-            <element signature="e#3219#3220#0" expanded="true" />
-            <element signature="e#3252#3253#0" expanded="true" />
-            <element signature="e#3416#3417#0" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-            <element signature="e#3600#3601#0" expanded="true" />
-            <element signature="e#3628#3629#0" expanded="true" />
-            <element signature="e#3767#3768#0" expanded="true" />
-            <element signature="e#3793#3794#0" expanded="true" />
-            <element signature="e#3928#3929#0" expanded="true" />
-            <element signature="e#3958#3959#0" expanded="true" />
-            <element signature="e#4110#4111#0" expanded="true" />
-            <element signature="e#4141#4142#0" expanded="true" />
-            <element signature="e#4297#4298#0" expanded="true" />
-            <element signature="e#4328#4329#0" expanded="true" />
-            <element signature="e#4487#4488#0" expanded="true" />
-            <element signature="e#4521#4522#0" expanded="true" />
-            <element signature="e#4714#4715#0" expanded="true" />
-            <element signature="e#4743#4744#0" expanded="true" />
-            <element signature="e#4776#4777#0" expanded="true" />
-            <element signature="e#4805#4806#0" expanded="true" />
-            <element signature="e#4841#4842#0" expanded="true" />
-            <element signature="e#4873#4874#0" expanded="true" />
-            <element signature="e#5095#5096#0" expanded="true" />
-            <element signature="e#5127#5128#0" expanded="true" />
-            <element signature="e#5154#5155#0" expanded="true" />
-            <element signature="e#5179#5180#0" expanded="true" />
-            <element signature="e#5920#5921#0" expanded="true" />
-            <element signature="e#5951#5952#0" expanded="true" />
-            <element signature="e#5987#5988#0" expanded="true" />
-            <element signature="e#6019#6020#0" expanded="true" />
-            <element signature="e#6062#6063#0" expanded="true" />
-            <element signature="e#6101#6102#0" expanded="true" />
-            <element signature="e#6133#6134#0" expanded="true" />
-            <element signature="e#6161#6162#0" expanded="true" />
-            <element signature="e#6194#6195#0" expanded="true" />
-            <element signature="e#6223#6224#0" expanded="true" />
-            <element signature="e#6259#6260#0" expanded="true" />
-            <element signature="e#6291#6292#0" expanded="true" />
-            <element signature="e#6327#6328#0" expanded="true" />
-            <element signature="e#6359#6360#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/GroupsHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="104" column="11" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="105" selection-end-column="5" />
+        <state relative-caret-position="183">
+          <caret line="86" column="30" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -2556,15 +2439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2578,9 +2452,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/helpers/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="183">
+          <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+          <folding>
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2590,6 +2467,32 @@
           <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/ComponentContact/ContactDetailsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Contact/CreationContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook/src/test/java/ru/stqa/pft/addressbook/tests/Group/CreationGroupTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="41" column="108" lean-forward="false" selection-start-line="41" selection-start-column="108" selection-end-line="41" selection-end-column="108" />
+          <folding>
+            <element signature="e#627#637#0" expanded="true" />
           </folding>
         </state>
       </provider>
