@@ -19,13 +19,13 @@ public class CreationContact extends TestBase {
 
         Contacts before = app.contact().all();
 
-        File photo = new File("src/test/resources/stru.png");
+        File photo = new File("src/test/resources/gift.jpeg");
         GroupAdressData contact = new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1").withPhoto(photo);
         app.contact().create(contact);
         app.goTo().homePage();
         assertThat(app.contact().count(),  equalTo(before.size() + 1));
 
-        Contacts after = (Contacts) app.contact().all();
+        Contacts after =  app.contact().all();
 
         assertThat(after, equalTo(
                 before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
