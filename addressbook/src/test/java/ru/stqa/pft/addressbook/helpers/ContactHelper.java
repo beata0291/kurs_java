@@ -6,9 +6,7 @@ import org.openqa.selenium.WebElement;
 import ru.stqa.pft.addressbook.models.Contacts;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends BaseHelper {
 
@@ -53,7 +51,7 @@ public class ContactHelper extends BaseHelper {
         click(By.name("submit"));
     }
 
-    private Contacts contactCache = null;
+
 
     public void delete(GroupAdressData contact) {
         selectAddressById(contact.getId());
@@ -97,25 +95,27 @@ public class ContactHelper extends BaseHelper {
         clickToUpdateAddress();
         contactCache = null;
     }
+    private Contacts contactCache = null;
 
-
-
-      public  Set<GroupAdressData> all(){
-        Set <GroupAdressData> contacts = new HashSet<>();
-        List<WebElement> rows = wd.findElements(By.name("entry"));
-        for (WebElement row : rows) {
-            List<WebElement> cells = row.findElements(By.tagName("td"));
-            int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
-            String firtsName = cells.get(2).getText();
-            String lastName = cells.get(1).getText();
+      public Contacts all() {
+          if (contactCache != null) {
+              return new Contacts(contactCache);
+          }
+          contactCache = new Contacts();
+          List<WebElement> elements = wd.findElements(By.name("entry"));
+          for (WebElement element : elements) {
+              List<WebElement> cells = element.findElements(By.tagName("td"));
+              String firtsName = cells.get(2).getText();
+              String lastName = cells.get(1).getText();
             String allPhones = cells.get(5).getText();
             String address = cells.get(3).getText();
             String emails = cells.get(4).getText();
+              int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
 
-            contacts.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firtsName)
+            contactCache.add(new GroupAdressData().withId(id).withLastName(lastName).withFirstName(firtsName)
                     .withAllPhones(allPhones).withAddressResidence(address).withAllEmails(emails));
         }
-        return contacts;
+        return new Contacts (contactCache);
     }
 
 

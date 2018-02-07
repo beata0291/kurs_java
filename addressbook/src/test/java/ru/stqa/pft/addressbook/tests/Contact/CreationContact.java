@@ -17,7 +17,8 @@ public class CreationContact extends TestBase {
     public void testCreationContact() {
         app.goTo().homePage();
 
-        Contacts before = (Contacts) app.contact().all();
+        Contacts before = app.contact().all();
+
         File photo = new File("src/test/resources/stru.png");
         GroupAdressData contact = new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1").withPhoto(photo);
         app.contact().create(contact);

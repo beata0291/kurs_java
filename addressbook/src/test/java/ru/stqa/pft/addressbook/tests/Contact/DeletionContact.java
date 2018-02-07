@@ -24,13 +24,13 @@ public class DeletionContact extends TestBase{
     @Test
     public void testDeletionContact() {
 
-        Contacts before = (Contacts) app.contact().all();
+        Contacts before =  app.contact().all();
         GroupAdressData deletedGroup = before.iterator().next();
         app.contact().delete(deletedGroup);
         app.goTo().homePage();
         assertThat(app.contact().count(),  equalTo(before.size() - 1));
 
-        Contacts after = (Contacts) app.contact().all();
+        Contacts after = app.contact().all();
 
         assertThat(after, equalTo(before.without(deletedGroup)));
 
