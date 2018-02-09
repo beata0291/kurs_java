@@ -149,7 +149,7 @@ public class ContactHelper extends BaseHelper {
         return new GroupAdressData().withId(contact.getId()).withFirstName(firtsName).withLastName(lastName)
                 .withEmail2(email2).withEmail3(email3).withMiddlename(middlename).withNickname(nickname).withTitle(title)
                 .withFax(fax).withCompany(company).withHomepage(homepage).withBirthday(birthdayDay + birthdayMonth + birthdayYear)
-                .withAnniversary(anniversaryDay + anniversaryMonth + anniversaryYear).withSecondaryAddress(secondaryAddress)
+                            .withAnniversary(anniversaryDay + anniversaryMonth + anniversaryYear).withSecondaryAddress(secondaryAddress)
                 .withSecondaryHomePhone(secondaryHomePhone).withNotes(notes);
     }
 
@@ -164,7 +164,7 @@ public class ContactHelper extends BaseHelper {
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    public String infoFromDetailsPage(GroupAdressData contact) {
+    public String infoFromDetailsPage (GroupAdressData contact) {
         contactDetails(contact);
         WebElement details = wd.findElement(By.id("content"));
         String[] parts = details.getText().split("Member of:");
@@ -173,7 +173,7 @@ public class ContactHelper extends BaseHelper {
         return detailsText;
     }
 
-    public void contactDetails(GroupAdressData contact) {
+    public void contactDetails (GroupAdressData contact) {
         int id = contact.getId();
         List<WebElement> rows = wd.findElements(By.name("entry"));
         for (WebElement row : rows) {
