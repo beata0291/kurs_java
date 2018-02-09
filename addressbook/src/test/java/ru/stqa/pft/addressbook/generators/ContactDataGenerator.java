@@ -23,7 +23,7 @@ public class ContactDataGenerator {
     public String file;
 
     @Parameter(names = "-d", description = "Data format")
-   public String format;
+    public String format;
 
 
     public static void main(String[] args) throws IOException {
@@ -41,39 +41,43 @@ public class ContactDataGenerator {
     private void run() throws IOException {
         List<GroupAdressData> contacts = generateContacts(count);
         if (format.equals("csv")) {
-                  saveAsCsv(contacts, new File(file));
-                } else if (format.equals("xml")) {
-                  saveAsXml(contacts, new File(file));
-                } else {
-                  System.out.println("Format nierozpoznany" + format);
-                }
-
-    }
-
-    private void saveAsXml(List<GroupAdressData> contacts, File file) throws IOException {
-        XStream xstream = new XStream();
-            xstream.processAnnotations(GroupAdressData.class);
-            String xml = xstream.toXML(contacts);
-            Writer writer = new FileWriter(file);
-            writer.write(xml);
-            writer.close();
-    }
-
-    private void saveAsCsv(List<GroupAdressData> contacts, File file) throws IOException {
-        Writer writer = new FileWriter(file);
-        for (GroupAdressData contact : contacts) {
-            writer.write(String.format("%s;%s;%s;%s\n", contact.getFirstName(), contact.getLastName(), contact.getMobile(), contact.getEmail()));
+            saveAsCsv(contacts, new File(file));
+        } else if (format.equals("xml")) {
+            saveAsXml(contacts, new File(file));
+        } else {
+            System.out.println("Format nierozpoznany" + format);
         }
-        writer.close();
     }
+
     private List<GroupAdressData> generateContacts(int count) {
         List<GroupAdressData> contacts = new ArrayList<GroupAdressData>();
         for (int i = 0; i < count; i++) {
             contacts.add(new GroupAdressData().withFirstName(String.format("test %s", i))
                     .withLastName(String.format("LastName %s", i)).withMobile(String.format("MobilePhone %s", i))
-                                          .withEmail(String.format("Email %s", i)));
+                    .withEmail(String.format("Email %s", i)));
 
         }
         return contacts;
     }
-}
+
+    private void saveAsXml(List<GroupAdressData> contacts, File file) throws IOException {
+        XStream xstream = new XStream();
+        xstream.processAnnotations(GroupAdressData.class);
+        String xml = xstream.toXML(contacts);
+        try (Writer writer = new FileWriter(file)) {
+            writer.write(xml);
+        }
+    }
+
+    private void saveAsCsv(List<GroupAdressData> contacts, File file) throws IOException {
+        System.out.println(new File(".").getAbsolutePath());
+        try (Writer writer = new FileWriter(file)) {
+            for (GroupAdressData contact : contacts) {
+                writer.write(String.format("%s;%s;%s;%s\n", contact.getFirstName(), contact.getLastName(), contact.getMobile()
+                        , contact.getEmail()));
+            }
+        }
+
+
+        }
+    }
