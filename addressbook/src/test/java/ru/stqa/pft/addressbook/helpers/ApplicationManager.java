@@ -22,6 +22,8 @@ public class ApplicationManager {
     public NavigationHelper NavigationHelper;
     public GroupsHelper GroupsHelper;
     public String browser;
+    private DbHelper dbHelper;
+
 
     public ApplicationManager(String property, String browser) {
         this.browser = browser;
@@ -40,12 +42,16 @@ public class ApplicationManager {
             wd= new InternetExplorerDriver();
         }
 
+        dbHelper = new DbHelper();
+
         wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         wd.get(properties.getProperty("web.baseUrl"));
         GroupsHelper = new GroupsHelper(wd);
         NavigationHelper = new NavigationHelper(wd);
         ContactHelper = new ContactHelper(wd);
         ContactHelper.login(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
+
+
     }
 
 
@@ -63,6 +69,10 @@ public class ApplicationManager {
 
     public ContactHelper contact() {
         return ContactHelper;
+    }
+
+    public DbHelper db() {
+        return dbHelper;
     }
 
     public boolean isElementPresent(By locator) {

@@ -2,52 +2,120 @@ package ru.stqa.pft.addressbook.models;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.io.File;
 
 @XStreamAlias("contact")
+@Entity
+
 public class GroupAdressData {
     @XStreamOmitField
+    @Id
 
 
+
+
+    @Column(name = "id")
     private int id = Integer.MAX_VALUE;
+    @Column(name = "lastname")
     private String lastName;
+    @Column(name = "firstname")
     private String firstName;
-    private String address;
+    @Column(name = "home")
+   @Type(type = "text")
     private String email;
+    @Column(name = "mobile")
+   @Type(type = "text")
     private String mobile;
     private String group;
+    @Column(name = "home")
+   @Type(type = "text")
     private String homePhone;
+    @Column(name = "work")
+   @Type(type = "text")
     private String workPhone;
+    @Transient
     public String allPhones;
+    @Transient
     private String addressResidence;
+    @Transient
     private String email2;
+    @Transient
     private String email3;
+    @Transient
     private String allEmails;
+    @Transient
     private String middlename;
+    @Transient
     private String nickname;
+    @Transient
     private String title;
+    @Transient
     private String fax;
+    @Transient
     private String company;
+    @Transient
     private String homepage;
+    @Transient
     private String birthday;
+    @Transient
     private String birthdayDay;
+    @Transient
     private String birthdayMonth;
+    @Transient
     private String birthdayYear;
+    @Transient
     private String anniversary;
+    @Transient
     private String anniversaryDay;
+    @Transient
     private String anniversaryMonth;
+    @Transient
     private String anniversaryYear;
+    @Transient
     private String secondaryAddress;
+    @Transient
     private String secondaryHomePhone;
-    public File photo;
+    @Column(name = "photo")
+   @Type(type = "text")
+    private String photo = "src/test/resources/stru.png";
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        GroupAdressData that = (GroupAdressData) o;
+
+        if (id != that.id) return false;
+        if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
+        if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
+        if (email != null ? !email.equals(that.email) : that.email != null) return false;
+        return mobile != null ? mobile.equals(that.mobile) : that.mobile == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id;
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+        result = 31 * result + (email != null ? email.hashCode() : 0);
+        result = 31 * result + (mobile != null ? mobile.hashCode() : 0);
+        return result;
+    }
 
     public  File getPhoto() {
-        return photo;
+        return new File("src/test/resources/stru.png");
+
     }
 
     public GroupAdressData withPhoto(File photo) {
-        this.photo = photo;
+        this.photo = photo.getPath();
         return this;
     }
 
@@ -236,26 +304,6 @@ public class GroupAdressData {
 
     public int getId() {
         return id;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        GroupAdressData that = (GroupAdressData) o;
-
-        if (id != that.id) return false;
-        if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
-        return firstName != null ? firstName.equals(that.firstName) : that.firstName == null;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
-        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
-        return result;
     }
 
     public String getLastName() {
