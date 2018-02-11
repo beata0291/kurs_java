@@ -16,7 +16,7 @@ public class DeletionContact extends TestBase{
         if (app.db().contacts().size() == 0) {
                   app.goTo().homePage();
             app.goTo().contactPage();
-            app.contact().create(new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1"));
+            app.contact().create(new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email"));
         }
     }
 
@@ -32,6 +32,7 @@ public class DeletionContact extends TestBase{
             Contacts after = app.db().contacts();
 
         assertThat(after, equalTo(before.without(deletedGroup)));
+        verifyContactListinUI();
 
         }
 

@@ -17,7 +17,7 @@ public class ContactEmailTests extends TestBase {
         app.goTo().homePage();
         if (app.contact().all().size() == 0) {
             app.goTo().contactPage();
-            app.contact().create(new GroupAdressData().withLastName("test_first_name").withFirstName("test_last_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1"));
+            app.contact().create(new GroupAdressData().withLastName("test_first_name").withFirstName("test_last_name").withMobile("test_mobile").withEmail("test_email"));
         }
     }
 

@@ -6,13 +6,19 @@ import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.Column;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import java.util.HashSet;
+import java.util.Set;
 
 @XStreamAlias("group")
 @javax.persistence.Entity
  @javax.persistence.Table(name = "group_list")
 
 public class GroupData {
+
+
     @XStreamOmitField
     @Id
    @Column(name = "group_id")
@@ -25,9 +31,14 @@ public class GroupData {
    @Type(type = "text")
     private  String header;
     @Expose
-    @Column(name = "group_footer")
-   @Type(type = "text")
-    private  String footer;
+    @Column(name="group_footer")
+    @Type(type="text")
+    private String footer;
+
+    @ManyToMany(mappedBy = "groups",fetch = FetchType.EAGER)
+    private Set<GroupAdressData> contacts=new HashSet<GroupAdressData>();
+
+
 
 
     @Override
@@ -75,6 +86,10 @@ public class GroupData {
         this.footer = footer;
         return this;
     }
+
+    public Contacts getContacts() {
+            return new Contacts(contacts);
+          }
 
     public String getName() {
         return name;

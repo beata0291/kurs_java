@@ -1,10 +1,13 @@
 package ru.stqa.pft.addressbook.tests.Contact;
 
 import com.thoughtworks.xstream.XStream;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.models.Contacts;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
+import ru.stqa.pft.addressbook.models.GroupData;
+import ru.stqa.pft.addressbook.models.Groups;
 import ru.stqa.pft.addressbook.tests.TestBase;
 
 import java.io.BufferedReader;
@@ -19,6 +22,15 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class CreationContact extends TestBase {
+
+    @BeforeMethod
+
+          public void ensurePreconditions(){
+            if (app.db().groups().size()==0){
+                  app.goTo().groupPage();
+                  app.group().create(new GroupData().withName("test1"));
+                }
+          }
 
     @DataProvider
     public Iterator<Object[]> validContacts() throws IOException {
@@ -40,9 +52,12 @@ public class CreationContact extends TestBase {
 
     @Test(dataProvider = "validContacts")
    public void testContactCreation(GroupAdressData contact) {
+        Groups groups=app.db().groups();
         app.goTo().homePage();
 
         Contacts before = app.db().contacts();
+        File photo=new File("src/test/resources/.gift.jpeg");
+        contact.withPhoto(photo).inGroup(groups.iterator().next());
         app.contact().create(contact);
         app.goTo().homePage();
         assertThat(app.contact().count(), equalTo(before.size() + 1));
@@ -50,6 +65,7 @@ public class CreationContact extends TestBase {
 
         assertThat(after, equalTo(
                 before.withAdded(contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
+        verifyContactListinUI();
     }
 
 }

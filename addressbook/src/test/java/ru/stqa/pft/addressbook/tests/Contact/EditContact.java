@@ -16,7 +16,7 @@ public class EditContact extends TestBase {
         if (app.db().contacts().size() == 0) {
                   app.goTo().homePage();
             app.goTo().contactPage();
-            app.contact().create(new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1"));
+            app.contact().create(new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email"));
         }
     }
 
@@ -27,13 +27,14 @@ public class EditContact extends TestBase {
         GroupAdressData modifiedContact = before.iterator().next();
 
         GroupAdressData contact = new GroupAdressData()
-                .withId(modifiedContact.getId()).withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1");
+                .withId(modifiedContact.getId()).withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email");
         app.goTo().homePage();
         app.contact().modify(contact);
         assertThat(app.contact().count(), equalTo(before.size()));
         Contacts after = app.db().contacts();
 
         assertThat(after, equalTo(before.without(modifiedContact).withAdded(contact)));
+        verifyGroupListinUI();
 
         }
 

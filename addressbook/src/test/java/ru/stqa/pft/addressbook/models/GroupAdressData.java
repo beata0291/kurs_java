@@ -4,11 +4,10 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import java.io.File;
+import java.util.HashSet;
+import java.util.Set;
 
 @XStreamAlias("contact")
 @Entity
@@ -17,9 +16,6 @@ public class GroupAdressData {
     @XStreamOmitField
     @Id
 
-
-
-
     @Column(name = "id")
     private int id = Integer.MAX_VALUE;
     @Column(name = "lastname")
@@ -27,17 +23,17 @@ public class GroupAdressData {
     @Column(name = "firstname")
     private String firstName;
     @Column(name = "home")
-   @Type(type = "text")
+    @Type(type = "text")
     private String email;
     @Column(name = "mobile")
-   @Type(type = "text")
+    @Type(type = "text")
     private String mobile;
-    private String group;
+
     @Column(name = "home")
-   @Type(type = "text")
+    @Type(type = "text")
     private String homePhone;
     @Column(name = "work")
-   @Type(type = "text")
+    @Type(type = "text")
     private String workPhone;
     @Transient
     public String allPhones;
@@ -82,8 +78,22 @@ public class GroupAdressData {
     @Transient
     private String secondaryHomePhone;
     @Column(name = "photo")
-   @Type(type = "text")
+    @Type(type = "text")
     private String photo = "src/test/resources/stru.png";
+
+    private String address;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "address_in_groups",
+            joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
+
+    public GroupAdressData withAddress(String address) {
+        this.address = address;
+        return this;
+
+    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -109,7 +119,7 @@ public class GroupAdressData {
         return result;
     }
 
-    public  File getPhoto() {
+    public File getPhoto() {
         return new File("src/test/resources/stru.png");
 
     }
@@ -292,10 +302,6 @@ public class GroupAdressData {
         return this;
     }
 
-    public String getGroup() {
-
-        return group;
-    }
 
     public String getAllPhones() {
         return allPhones;
@@ -332,6 +338,10 @@ public class GroupAdressData {
 
     public String getHomePhone() {
         return homePhone;
+    }
+
+    public String getAddress() {
+        return address;
     }
 
 
@@ -375,9 +385,8 @@ public class GroupAdressData {
         return this;
     }
 
-    public GroupAdressData withGroup(String group) {
-        this.group = group;
-        return this;
+    public Groups getGroups() {
+        return new Groups(groups);
     }
 
     public GroupAdressData withHomePhone(String homePhone) {
@@ -402,6 +411,11 @@ public class GroupAdressData {
 
     public GroupAdressData withAllEmails(String allEmails) {
         this.allEmails = allEmails;
+        return this;
+    }
+
+    public GroupAdressData inGroup(GroupData group) {
+        groups.add(group);
         return this;
 
 

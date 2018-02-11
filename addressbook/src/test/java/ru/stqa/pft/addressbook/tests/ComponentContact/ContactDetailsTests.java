@@ -17,7 +17,7 @@ public class ContactDetailsTests extends TestBase {
         app.goTo().homePage();
         if (app.contact().all().size() == 0) {
             app.goTo().contactPage();
-            app.contact().create(new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email").withGroup("test1"));
+            app.contact().create(new GroupAdressData().withLastName("test_last_name").withFirstName("test_first_name").withMobile("test_mobile").withEmail("test_email"));
         }
     }
 
@@ -31,6 +31,7 @@ public class ContactDetailsTests extends TestBase {
         String cleanedDataDetailsForm = cleaned(detailsData);
 
         assertThat(cleanedDataDetailsForm, equalTo(cleanEditFormData));
+        verifyContactListinUI();
     }
 
     private String mergeDetails(GroupAdressData contact) {

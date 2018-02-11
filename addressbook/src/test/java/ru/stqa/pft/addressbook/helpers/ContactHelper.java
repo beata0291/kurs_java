@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import ru.stqa.pft.addressbook.models.Contacts;
 import ru.stqa.pft.addressbook.models.GroupAdressData;
+import ru.stqa.pft.addressbook.models.GroupData;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ContactHelper extends BaseHelper {
@@ -75,9 +77,27 @@ public class ContactHelper extends BaseHelper {
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
-*/
 
+if (creation)
 
+    {
+        if (Creation) {
+        if (GroupAdressData.getGroups().size() > 0) {
+            Assert.assertTrue(GroupAdressData.getGroups().size() == 1);
+            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(GroupAdressData.getGroups().iterator().next().getName());
+        } else
+
+        {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+
+        }
+    }
+    */
+
+    public int selectContactAndReturnID(int index) {
+            wd.findElements(By.name("selected[]")).get(index).click();
+            return Integer.parseInt(wd.findElements(By.name("selected[]")).get(index).getAttribute("id"));
+          }
 
     public void create(GroupAdressData contact) {
         goToNewAddressPage();
@@ -98,9 +118,10 @@ public class ContactHelper extends BaseHelper {
     private Contacts contactCache = null;
 
       public Contacts all() {
-          if (contactCache != null) {
+        /*  if (contactCache != null) {
               return new Contacts(contactCache);
           }
+          */
           contactCache = new Contacts();
           List<WebElement> elements = wd.findElements(By.name("entry"));
           for (WebElement element : elements) {
@@ -186,4 +207,29 @@ public class ContactHelper extends BaseHelper {
             }
         }
     }
+    public List<GroupData> groupList() {
+            List<GroupData> groups = new ArrayList<GroupData>();
+            List<WebElement> elements = wd.findElements(By.xpath("//*[@id=\"content\"]/form[2]/div[4]/select/option"));
+            for (WebElement element : elements) {
+                  String name = element.getText();
+                  int id = Integer.parseInt(element.getAttribute("value"));
+                  GroupData group = new GroupData().withId(id).withName(name);
+                  groups.add(group);
+                }
+            return groups;
+          }
+
+
+          public void click(By locator) {
+            wd.findElement(locator).click();
+          }
+
+
+          public void selectGroupAdd(String name) {
+            wd.findElement(By.name("to_group"));
+          }
+
+          public void selectGroupRemove(String name) {
+            wd.findElement(By.name("group"));
+          }
 }
