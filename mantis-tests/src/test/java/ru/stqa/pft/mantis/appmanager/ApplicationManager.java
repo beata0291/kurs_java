@@ -19,6 +19,8 @@ public class ApplicationManager {
     private String browser;
     private RegistrationHelper registrationHelper;
     private FtpHelper ftp;
+    private MailHelper mailHelper;
+    private ChangePasswordHelper changePasswordHelper;
 
     public ApplicationManager(String property, String browser) {
         this.browser = browser;
@@ -79,4 +81,18 @@ public class ApplicationManager {
         }
         return wd;
     }
+
+    public MailHelper mail(){
+            if (mailHelper==null){
+                  mailHelper=new MailHelper(this);
+                }
+            return mailHelper;
+          }
+
+          public ChangePasswordHelper change() {
+            if (changePasswordHelper == null) {
+                  changePasswordHelper = new ChangePasswordHelper(this);
+                }
+            return changePasswordHelper;
+          }
 }

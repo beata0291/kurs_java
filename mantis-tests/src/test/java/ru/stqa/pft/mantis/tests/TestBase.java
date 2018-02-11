@@ -13,18 +13,20 @@ public class TestBase {
 
 
     public WebDriver wd;
-    protected static final ApplicationManager app = new ApplicationManager(System.getProperty("browser"), BrowserType.FIREFOX);
+    public static final ApplicationManager app = new ApplicationManager(System.getProperty("browser"), BrowserType.FIREFOX);
 
     @BeforeSuite
     public void setUp() throws Exception {
         app.init();
         app.ftp().upload(new File("src/test/resources/config_inc.php"),"config_inc.php","config_inc.php.bak");
+
     }
 
     @AfterSuite
     public void tearDown() throws IOException {
-        app.ftp().restore("config_inc.php.bak","config_inc.php");
+        app.ftp().restore("config_inc.php.bak", "config_inc.php");
         app.stop();
+
     }
 
 }
